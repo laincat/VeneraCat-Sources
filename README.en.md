@@ -61,4 +61,4 @@ One collection contains Plex,a theme example,a Surge-style reading-preferences e
 
 All platforms share source IDs,entry IDs,versions and content. Clients evaluate `supports.platforms` and `requiresCapabilities`; declarations are not device verification. Subscribing does not execute every entry: installation,enablement and permissions are separate.
 
-There is no invented publication URL. Preserve existing script-body digest semantics and give future archives separate digests. A checksum establishes integrity,not publisher identity. Third-party code/models retain their own licenses; this repository's GPL-3.0 does not relicense them.
+There is no invented publication URL. Preserve existing script-body digest semantics and give future archives separate digests. A checksum establishes integrity,not publisher identity. Third-party code/models retain their own licenses; this repository's LGPL-3.0-or-later does not relicense them.

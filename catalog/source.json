@@ -15,7 +15,7 @@
       "key": "plex",
       "version": "0.1.0",
       "filename": "plex.js",
-      "license": "GPL-3.0-only",
+      "license": "LGPL-3.0-or-later",
       "input": {
         "file": "catalog/packages/plex/plex.js"
       },
@@ -41,7 +41,7 @@
       "name": "主题格式示例 / Theme format example",
       "version": "0.1.0",
       "filename": "theme.json",
-      "license": "GPL-3.0-only",
+      "license": "LGPL-3.0-or-later",
       "input": {
         "file": "templates/theme-legacy/theme.json"
       },
@@ -65,7 +65,7 @@
       "name": "阅读偏好示例",
       "version": "0.1.0",
       "filename": "reader-preferences.vcmodule",
-      "license": "GPL-3.0-only",
+      "license": "LGPL-3.0-or-later",
       "input": {
         "file": "templates/modules/reader-preferences.vcmodule"
       },

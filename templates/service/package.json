@@ -4,5 +4,5 @@
   "private": true,
   "type": "module",
   "exports": "./index.mjs",
-  "license": "GPL-3.0-only"
+  "license": "LGPL-3.0-or-later"
 }

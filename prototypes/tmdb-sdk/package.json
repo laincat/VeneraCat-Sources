@@ -8,7 +8,7 @@
     "esbuild": "^0.28.2",
     "tmdb-ts": "^2.3.0"
   },
-  "license": "GPL-3.0-only",
+  "license": "LGPL-3.0-or-later",
   "scripts": {
     "build": "node build.mjs",
     "test:core": "node test-core.mjs"

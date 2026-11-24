@@ -29,6 +29,7 @@ type artifact struct {
 type entry struct {
 	ID       string `json:"id"`
 	Kind     string `json:"kind"`
+	Key      string `json:"key"`
 	Status   string `json:"status"`
 	Supports struct {
 		Platforms    []string `json:"platforms"`
@@ -51,6 +52,7 @@ func main() {
 		panic("unexpected collection identity")
 	}
 	seen := map[string]bool{}
+	expectedVideo := map[string]string{}
 	artifacts := 0
 	for _, e := range source.Entries {
 		if seen[e.ID] || len(e.Supports.Platforms) == 0 || len(e.Supports.Capabilities) == 0 {
@@ -73,6 +75,12 @@ func main() {
 				panic("artifact integrity mismatch")
 			}
 			artifacts++
+			if e.Kind == "video-source" && e.Status == "experimental" {
+				if e.Key == "" {
+					panic("video source missing key")
+				}
+				expectedVideo[e.Key] = u.Path
+			}
 		}
 	}
 	if !seen["plex"] || !seen["reader-preferences"] || !seen["service.trakt"] || !seen["image.colorization.comfyui"] {
@@ -89,23 +97,31 @@ func main() {
 	must(err)
 	idx, err := subscription.Parse(raw, base)
 	must(err)
-	if len(idx.Plugins) != 1 || idx.Plugins[0].Key != "plex" {
+	if len(idx.Plugins) != len(expectedVideo) || expectedVideo["plex"] == "" {
 		panic("unexpected compatibility index")
 	}
 	rt, err := js.New(js.Options{}, js.Services{Transport: offline{}, Env: js.Environment{AppVersion: "1.6.3"}})
 	must(err)
 	defer rt.Close()
 	registry := plugin.New(rt, offline{})
-	body, err := os.ReadFile(filepath.Join(root, "packages", "plex", "plex.js"))
-	must(err)
-	rec, err := registry.InstallFromVideoIndex(context.Background(), base, idx.Plugins[0], string(body))
-	must(err)
-	if rec.Key != "plex" {
-		panic("wrong installed key")
+	seenVideo := map[string]bool{}
+	for _, p := range idx.Plugins {
+		relPath, ok := expectedVideo[p.Key]
+		if !ok || seenVideo[p.Key] {
+			panic("unexpected compatibility index")
+		}
+		seenVideo[p.Key] = true
+		body, err := os.ReadFile(filepath.Join(root, filepath.FromSlash(relPath)))
+		must(err)
+		rec, err := registry.InstallFromVideoIndex(context.Background(), base, p, string(body))
+		must(err)
+		if rec.Key != p.Key {
+			panic("wrong installed key")
+		}
+		_, err = registry.Video(p.Key)
+		must(err)
 	}
-	_, err = registry.Video("plex")
-	must(err)
-	fmt.Println("PASS existing Core parses legacy video adapter and installs Plex with checksum; unified source consumer/module executor still pending")
+	fmt.Printf("PASS existing Core parses legacy video adapter and installs %d video plugins (including plex) with checksum; unified source consumer/module executor still pending\n", len(idx.Plugins))
 }
 func must(err error) {
 	if err != nil {
