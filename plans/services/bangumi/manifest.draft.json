@@ -1,0 +1,39 @@
+{
+  "schema": "veneracat-service/1-draft",
+  "id": "service.bangumi",
+  "version": "0.1.0",
+  "status": "design-only-not-installable",
+  "runtime": "javascript-esm",
+  "entry": "index.mjs",
+  "capabilities": [
+    "account",
+    "metadata",
+    "collection",
+    "episode-progress"
+  ],
+  "authMethods": [
+    "personal-access-token",
+    "oauth-if-registered-flow-is-supported"
+  ],
+  "networkOrigins": [
+    "https://api.bgm.tv",
+    "https://bgm.tv",
+    "https://next.bgm.tv"
+  ],
+  "upstream": "https://github.com/bangumi/api",
+  "secretStorage": "host-vault-per-profile-plugin-account",
+  "notes": [
+    "Current iOS uses a personal access token; preserve user-agent and legacy-search fallback",
+    "Prefer official OpenAPI and generated clients; do not embed a confidential client secret"
+  ],
+  "supports": {
+    "platforms": [
+      "ios",
+      "macos",
+      "windows"
+    ],
+    "requiresCapabilities": [
+      "service.v1"
+    ]
+  }
+}

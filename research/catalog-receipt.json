@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_id": "veneracat.official",
+  "entries": 7,
+  "artifacts": 3,
+  "reproducible_files": 12,
+  "per_client_outputs": false,
+  "core_contract": "legacy format adapters parsed; Plex checksum/install/provider lookup passed",
+  "not_implemented": [
+    "unified source client consumer",
+    "settings module executor",
+    "service login",
+    "model inference"
+  ],
+  "source_sha256": "94815211511273fae3de8d42cdabc1c30ab8aba6a7cb44057847f8e02cfce23f",
+  "log": "E:/Temp/nk-unified-source/finalize.log",
+  "core_commit": "a077956cfb3a8c15f1fa6e9520ecae35aecb559a"
+}

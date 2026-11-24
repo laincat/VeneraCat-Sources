@@ -1,0 +1,9 @@
+{
+  "$schema": "veneracat-source/1-draft",
+  "id": "publisher.example",
+  "name": "跨端源合集模板",
+  "version": "0.1.0",
+  "publisher": {"name": "示例发布者"},
+  "description": "按内容类型添加entries，并在每条目中声明supports；不要按客户端复制合集。",
+  "entries": []
+}

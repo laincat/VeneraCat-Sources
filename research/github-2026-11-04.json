@@ -1,0 +1,1023 @@
+{
+  "retrieved": "2026-11-04",
+  "scope": "Categorized GitHub discovery and targeted README/license/source inspection, not all-GitHub enumeration",
+  "queries": {
+    "go-js-search": "javascript engine language:Go archived:false; sort updated",
+    "editor-search": "code editor iOS syntax highlighting archived:false; sort updated",
+    "colorization-search": "manga colorization; sort updated",
+    "colorization-established": "manga colorization stars:>50; sort stars",
+    "editor-established": "code editor Swift syntax highlighting stars:>100; sort stars",
+    "trakt-search": "trakt client (language:JavaScript OR language:TypeScript) stars:>10; zero results then broadened",
+    "tmdb-search": "tmdb typescript client stars:>10",
+    "bangumi-search": "bangumi api client",
+    "new-engine-search": "ECMAScript language:Go created:>=2026-01-01",
+    "trakt-broad-search": "trakt.tv; sort stars"
+  },
+  "repositories": {
+    "superuser404notfound/AetherEngine": {
+      "html_url": "https://github.com/superuser404notfound/AetherEngine",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2026-04-12T04:13:55Z",
+      "pushed_at": "2026-11-03T22:03:15Z",
+      "stargazers_count": 361,
+      "license_spdx": "NOASSERTION"
+    },
+    "bangumi/api": {
+      "html_url": "https://github.com/bangumi/api",
+      "default_branch": "master",
+      "archived": false,
+      "created_at": "2018-02-22T15:08:20Z",
+      "pushed_at": "2026-09-13T21:48:47Z",
+      "stargazers_count": 1259,
+      "license_spdx": null
+    },
+    "mchakravarty/CodeEditorView": {
+      "html_url": "https://github.com/mchakravarty/CodeEditorView",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2021-05-18T17:09:01Z",
+      "pushed_at": "2026-10-17T15:24:30Z",
+      "stargazers_count": 927,
+      "license_spdx": "Apache-2.0"
+    },
+    "codemirror/dev": {
+      "html_url": "https://github.com/codemirror/dev",
+      "default_branch": "main",
+      "archived": true,
+      "created_at": "2018-08-28T12:10:35Z",
+      "pushed_at": "2026-04-15T10:24:43Z",
+      "stargazers_count": 7807,
+      "license_spdx": "NOASSERTION"
+    },
+    "Comfy-Org/ComfyUI": {
+      "html_url": "https://github.com/Comfy-Org/ComfyUI",
+      "default_branch": "master",
+      "archived": false,
+      "created_at": "2023-01-17T03:15:56Z",
+      "pushed_at": "2026-11-04T01:10:36Z",
+      "stargazers_count": 144893,
+      "license_spdx": "GPL-3.0"
+    },
+    "lllyasviel/ControlNet": {
+      "html_url": "https://github.com/lllyasviel/ControlNet",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2023-02-01T02:43:30Z",
+      "pushed_at": "2024-02-25T09:49:39Z",
+      "stargazers_count": 34150,
+      "license_spdx": "Apache-2.0"
+    },
+    "zloirock/core-js": {
+      "html_url": "https://github.com/zloirock/core-js",
+      "default_branch": "master",
+      "archived": false,
+      "created_at": "2013-07-17T16:32:27Z",
+      "pushed_at": "2026-11-04T02:46:40Z",
+      "stargazers_count": 25519,
+      "license_spdx": "MIT"
+    },
+    "huggingface/diffusers": {
+      "html_url": "https://github.com/huggingface/diffusers",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2022-05-30T16:04:02Z",
+      "pushed_at": "2026-11-03T17:14:10Z",
+      "stargazers_count": 34856,
+      "license_spdx": "Apache-2.0"
+    },
+    "evanw/esbuild": {
+      "html_url": "https://github.com/evanw/esbuild",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2016-06-14T16:08:50Z",
+      "pushed_at": "2026-08-09T17:20:12Z",
+      "stargazers_count": 40120,
+      "license_spdx": "MIT"
+    },
+    "yetone/magpie": {
+      "html_url": "https://github.com/yetone/magpie",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2026-09-23T16:22:35Z",
+      "pushed_at": "2026-11-04T02:23:53Z",
+      "stargazers_count": 29127,
+      "license_spdx": "MIT"
+    },
+    "mantinedev/mantine": {
+      "html_url": "https://github.com/mantinedev/mantine",
+      "default_branch": "master",
+      "archived": false,
+      "created_at": "2021-01-07T14:02:19Z",
+      "pushed_at": "2026-11-02T10:14:02Z",
+      "stargazers_count": 31903,
+      "license_spdx": "MIT"
+    },
+    "MoeForge/moejs": {
+      "html_url": "https://github.com/MoeForge/moejs",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2026-09-24T10:23:01Z",
+      "pushed_at": "2026-11-03T14:02:39Z",
+      "stargazers_count": 427,
+      "license_spdx": "Apache-2.0"
+    },
+    "microsoft/monaco-editor": {
+      "html_url": "https://github.com/microsoft/monaco-editor",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2016-06-07T16:56:31Z",
+      "pushed_at": "2026-11-03T18:51:30Z",
+      "stargazers_count": 46949,
+      "license_spdx": "MIT"
+    },
+    "mpvkit/MPVKit": {
+      "html_url": "https://github.com/mpvkit/MPVKit",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2024-07-10T01:56:44Z",
+      "pushed_at": "2026-10-09T13:21:45Z",
+      "stargazers_count": 211,
+      "license_spdx": "LGPL-3.0"
+    },
+    "egoist/mygo": {
+      "html_url": "https://github.com/egoist/mygo",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2026-09-26T15:21:37Z",
+      "pushed_at": "2026-11-03T20:30:20Z",
+      "stargazers_count": 4366,
+      "license_spdx": "MIT"
+    },
+    "kean/Nuke": {
+      "html_url": "https://github.com/kean/Nuke",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2015-03-11T10:53:26Z",
+      "pushed_at": "2026-11-03T01:19:40Z",
+      "stargazers_count": 8691,
+      "license_spdx": "MIT"
+    },
+    "hey-api/hey-api": {
+      "html_url": "https://github.com/hey-api/hey-api",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2024-01-10T15:19:25Z",
+      "pushed_at": "2026-10-31T16:51:08Z",
+      "stargazers_count": 5553,
+      "license_spdx": "MIT"
+    },
+    "simonbs/Runestone": {
+      "html_url": "https://github.com/simonbs/Runestone",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2022-01-17T15:09:37Z",
+      "pushed_at": "2026-11-02T20:19:07Z",
+      "stargazers_count": 3239,
+      "license_spdx": "MIT"
+    },
+    "liustack/slowjs": {
+      "html_url": "https://github.com/liustack/slowjs",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2026-10-13T21:36:06Z",
+      "pushed_at": "2026-11-03T13:00:14Z",
+      "stargazers_count": 17,
+      "license_spdx": "NOASSERTION"
+    },
+    "grafana/sobek": {
+      "html_url": "https://github.com/grafana/sobek",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2024-06-06T09:08:39Z",
+      "pushed_at": "2026-11-02T11:03:53Z",
+      "stargazers_count": 361,
+      "license_spdx": "MIT"
+    },
+    "style-dictionary/style-dictionary": {
+      "html_url": "https://github.com/style-dictionary/style-dictionary",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2016-11-29T20:53:51Z",
+      "pushed_at": "2026-11-03T21:21:01Z",
+      "stargazers_count": 4875,
+      "license_spdx": "Apache-2.0"
+    },
+    "lynnswap/SyntaxEditorUI": {
+      "html_url": "https://github.com/lynnswap/SyntaxEditorUI",
+      "default_branch": "main",
+      "archived": false,
+      "created_at": "2026-03-02T07:26:18Z",
+      "pushed_at": "2026-11-03T06:47:48Z",
+      "stargazers_count": 2,
+      "license_spdx": "MIT"
+    },
+    "wailsapp/wails": {
+      "html_url": "https://github.com/wailsapp/wails",
+      "default_branch": "master",
+      "archived": false,
+      "created_at": "2018-12-15T23:14:06Z",
+      "pushed_at": "2026-11-04T00:18:12Z",
+      "stargazers_count": 36945,
+      "license_spdx": "MIT"
+    }
+  },
+  "searches": {
+    "ecosystem-bangumi-search": {
+      "total_count": 4,
+      "items": [
+        {
+          "repository": "VaillerTeeter/Bangumi-api-client",
+          "stars": 2,
+          "pushed_at": "2026-11-02T01:07:42Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "2584271466bxu-wq/Bangumi_API_Client",
+          "stars": 0,
+          "pushed_at": "2025-12-03T21:09:38Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "markni/node-bangumi",
+          "stars": 8,
+          "pushed_at": "2024-09-28T19:39:09Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "wfjsw/rin-node-client",
+          "stars": 0,
+          "pushed_at": "2017-06-09T02:45:20Z",
+          "license_spdx": null
+        }
+      ]
+    },
+    "ecosystem-colorization-established": {
+      "total_count": 9,
+      "items": [
+        {
+          "repository": "ali-vilab/MangaNinjia",
+          "stars": 752,
+          "pushed_at": "2025-03-02T07:20:37Z",
+          "license_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "qweasdd/manga-colorization-v2",
+          "stars": 278,
+          "pushed_at": "2025-03-31T14:37:39Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "BinitDOX/Manga-Colorizer",
+          "stars": 177,
+          "pushed_at": "2026-02-20T10:57:51Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "OValery16/Manga-colorization---cycle-gan",
+          "stars": 175,
+          "pushed_at": "2018-09-28T06:44:45Z",
+          "license_spdx": "MPL-2.0"
+        },
+        {
+          "repository": "jettbrains/-L-",
+          "stars": 169,
+          "pushed_at": "2021-08-18T13:41:54Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "DwangoMediaVillage/Comicolorization",
+          "stars": 148,
+          "pushed_at": "2021-02-09T09:44:36Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "xiaogdgenuine/Manga-Colorization-FJ",
+          "stars": 101,
+          "pushed_at": "2022-06-21T07:29:02Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "smthemex/ComfyUI_MangaNinjia",
+          "stars": 59,
+          "pushed_at": "2025-04-09T14:21:57Z",
+          "license_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "sudheerachary/Manga_Colorization",
+          "stars": 51,
+          "pushed_at": "2018-12-26T06:15:54Z",
+          "license_spdx": "MIT"
+        }
+      ]
+    },
+    "ecosystem-colorization-search": {
+      "total_count": 205,
+      "items": [
+        {
+          "repository": "chintu-io/nyaa-si-literature-rss",
+          "stars": 1,
+          "pushed_at": "2026-11-04T00:10:00Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "Lenux32/Orion",
+          "stars": 7,
+          "pushed_at": "2026-11-03T21:15:12Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "akardas16/ai-manga-studio",
+          "stars": 0,
+          "pushed_at": "2026-11-03T21:06:08Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "1Dreamer666/MangaColour",
+          "stars": 0,
+          "pushed_at": "2026-11-03T11:16:06Z",
+          "license_spdx": "AGPL-3.0"
+        },
+        {
+          "repository": "Jocoks/manga-color-adapter",
+          "stars": 1,
+          "pushed_at": "2026-11-02T16:13:15Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "Amster-Ilvil/Colortina",
+          "stars": 1,
+          "pushed_at": "2026-11-02T13:48:04Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "Cowabunga86/comic-color-converter",
+          "stars": 1,
+          "pushed_at": "2026-10-31T23:14:20Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "Maanas-Verma/exp-manga-colorization",
+          "stars": 0,
+          "pushed_at": "2026-10-30T11:01:38Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "FlamboyantEntertainment/manga-colorizer",
+          "stars": 8,
+          "pushed_at": "2026-10-29T22:38:57Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "Mobasharul-Islam/manga-color-studio",
+          "stars": 1,
+          "pushed_at": "2026-10-27T02:09:43Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "roxy-92/artist-portfolio",
+          "stars": 1,
+          "pushed_at": "2026-10-26T14:34:45Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "TTOGEARII/NekoManga",
+          "stars": 0,
+          "pushed_at": "2026-10-26T03:27:20Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "Otaconskeep/otaconskeep-site",
+          "stars": 0,
+          "pushed_at": "2026-11-01T20:21:39Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "tenjotenge/mangafication",
+          "stars": 0,
+          "pushed_at": "2026-10-23T18:42:35Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "andam0202/inkdeus",
+          "stars": 0,
+          "pushed_at": "2026-10-22T20:06:42Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "apphaus2/Bible",
+          "stars": 0,
+          "pushed_at": "2026-10-22T17:14:25Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "dadroper12138-cmd/-1",
+          "stars": 0,
+          "pushed_at": "2026-10-21T17:36:12Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "Mobai0z0/manga-colorizer",
+          "stars": 0,
+          "pushed_at": "2026-10-20T14:04:47Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "phonowell/manga-colorization",
+          "stars": 0,
+          "pushed_at": "2026-10-20T10:36:58Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "0xH4KU/mangajanai-colab",
+          "stars": 0,
+          "pushed_at": "2026-10-12T10:36:51Z",
+          "license_spdx": "AGPL-3.0"
+        },
+        {
+          "repository": "knowledgehub67/TV-Production-Services-In-Mangalore-",
+          "stars": 0,
+          "pushed_at": "2026-10-03T04:35:46Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "knowledgehub67/TV-Production-Services-In-Mangalore-India",
+          "stars": 0,
+          "pushed_at": "2026-10-01T11:32:37Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "knowledgehub67/Film-Video-Editing-Services-Mangalore-India",
+          "stars": 0,
+          "pushed_at": "2026-10-01T07:32:18Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "skyechiu/MangaColorization",
+          "stars": 0,
+          "pushed_at": "2026-09-29T12:35:48Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "Otaconskeep/AI9",
+          "stars": 0,
+          "pushed_at": "2026-09-21T15:18:13Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "manav-bidawat/manga-colorization-v2-onnx",
+          "stars": 0,
+          "pushed_at": "2026-09-15T00:17:21Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "LienoPC/Manga-Auto-Colorization",
+          "stars": 0,
+          "pushed_at": "2026-09-11T17:26:22Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "ayankandar2-ux/manga-colorizer",
+          "stars": 0,
+          "pushed_at": "2026-09-10T19:53:06Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "Chinna95P/manga-colorizer-project",
+          "stars": 2,
+          "pushed_at": "2026-09-10T18:13:02Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "AIALRA-0/PanelTone",
+          "stars": 0,
+          "pushed_at": "2026-09-10T15:08:47Z",
+          "license_spdx": "Apache-2.0"
+        }
+      ]
+    },
+    "ecosystem-editor-established": {
+      "total_count": 1,
+      "items": [
+        {
+          "repository": "ZeeZide/CodeEditor",
+          "stars": 491,
+          "pushed_at": "2024-07-02T15:27:27Z",
+          "license_spdx": "MIT"
+        }
+      ]
+    },
+    "ecosystem-editor-search": {
+      "total_count": 5,
+      "items": [
+        {
+          "repository": "lynnswap/SyntaxEditorUI",
+          "stars": 2,
+          "pushed_at": "2026-11-03T06:47:48Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "numq/kortex",
+          "stars": 7,
+          "pushed_at": "2026-10-25T13:34:18Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "espinosalastresr-del/SwiftIDE-iOS",
+          "stars": 0,
+          "pushed_at": "2026-09-05T02:15:45Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "workspace-sh/react-native-source-editor",
+          "stars": 1,
+          "pushed_at": "2026-08-01T07:10:27Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "shion-skgw/SourceCodeEditorView",
+          "stars": 4,
+          "pushed_at": "2021-01-06T04:04:39Z",
+          "license_spdx": null
+        }
+      ]
+    },
+    "ecosystem-go-js-search": {
+      "total_count": 82,
+      "items": [
+        {
+          "repository": "go-quickjs/go-quickjs",
+          "stars": 29,
+          "pushed_at": "2026-11-04T00:35:55Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "dop251/goja",
+          "stars": 7184,
+          "pushed_at": "2026-11-03T21:45:43Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "Nehonix-Team/FileOnix",
+          "stars": 3,
+          "pushed_at": "2026-11-03T17:16:41Z",
+          "license_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "The-Vibe-Company/quivr",
+          "stars": 39627,
+          "pushed_at": "2026-11-02T14:24:50Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "88250/lute",
+          "stars": 1678,
+          "pushed_at": "2026-11-01T10:40:07Z",
+          "license_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "bitcode-framework/go-json-runtimes",
+          "stars": 0,
+          "pushed_at": "2026-10-30T07:16:25Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "EdgeComet/engine",
+          "stars": 50,
+          "pushed_at": "2026-10-27T09:08:50Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "infat0x/siphon",
+          "stars": 0,
+          "pushed_at": "2026-10-26T18:49:54Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "faustbrian/go-ecma-regexp",
+          "stars": 0,
+          "pushed_at": "2026-10-27T03:24:38Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "aizen-sosuke218/tspdnative-go",
+          "stars": 0,
+          "pushed_at": "2026-10-21T00:05:28Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "baslentfert/jsc2go",
+          "stars": 1,
+          "pushed_at": "2026-10-19T19:06:16Z",
+          "license_spdx": "LGPL-2.1"
+        },
+        {
+          "repository": "mind-vm/thinking-core",
+          "stars": 0,
+          "pushed_at": "2026-10-19T18:44:58Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "davidcrumpton/mcp-host-engine",
+          "stars": 0,
+          "pushed_at": "2026-10-18T14:41:06Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "23jdd/animation",
+          "stars": 1,
+          "pushed_at": "2026-10-18T14:16:34Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "HawkForge/goja",
+          "stars": 0,
+          "pushed_at": "2026-10-16T22:32:09Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "tx7do/go-scripts",
+          "stars": 7,
+          "pushed_at": "2026-10-15T15:42:57Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "ForgeStacks/vinyl_pipeline",
+          "stars": 2,
+          "pushed_at": "2026-10-13T06:50:46Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "joaopedrokt110/vingo",
+          "stars": 2,
+          "pushed_at": "2026-10-12T04:22:32Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "joeycumines/goja-protojson",
+          "stars": 0,
+          "pushed_at": "2026-10-11T01:25:13Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "wspr-ncsu/visiblev8",
+          "stars": 301,
+          "pushed_at": "2026-10-10T16:57:10Z",
+          "license_spdx": "BSD-3-Clause"
+        },
+        {
+          "repository": "ZupIT/horusec-engine",
+          "stars": 22,
+          "pushed_at": "2026-10-09T14:24:47Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "HarshalPatel1972/GoSync",
+          "stars": 6,
+          "pushed_at": "2026-10-05T22:57:47Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "hmsoft0815/wollmilchsau",
+          "stars": 0,
+          "pushed_at": "2026-09-30T09:11:04Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "theworker02/stateful-deployments-engine",
+          "stars": 0,
+          "pushed_at": "2026-09-29T00:59:23Z",
+          "license_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "marcheschi/perfuse",
+          "stars": 1,
+          "pushed_at": "2026-09-28T06:28:25Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "vickysde/ts-engine",
+          "stars": 19,
+          "pushed_at": "2026-09-08T11:27:42Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "robomotionio/goant",
+          "stars": 7,
+          "pushed_at": "2026-09-21T12:23:40Z",
+          "license_spdx": "NOASSERTION"
+        },
+        {
+          "repository": "codedeviate/sercon",
+          "stars": 1,
+          "pushed_at": "2026-08-20T12:34:27Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "dimaspandu/roution",
+          "stars": 0,
+          "pushed_at": "2026-08-08T09:53:39Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "ghosind/gjs",
+          "stars": 0,
+          "pushed_at": "2026-07-21T09:52:28Z",
+          "license_spdx": "MIT"
+        }
+      ]
+    },
+    "ecosystem-new-engine-search": {
+      "total_count": 7,
+      "items": [
+        {
+          "repository": "go-quickjs/go-quickjs",
+          "stars": 29,
+          "pushed_at": "2026-11-04T00:35:55Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "faustbrian/go-ecma-regexp",
+          "stars": 0,
+          "pushed_at": "2026-10-27T03:24:38Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "LusterAnalyst/javascript-action-with-es-modules",
+          "stars": 1,
+          "pushed_at": "2026-10-19T13:31:04Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "HawkForge/goja",
+          "stars": 0,
+          "pushed_at": "2026-10-16T22:32:09Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "Madhavkannank/fafa",
+          "stars": 1,
+          "pushed_at": "2026-09-22T17:40:52Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "JakeChampion/eszip",
+          "stars": 1,
+          "pushed_at": "2026-07-10T16:14:00Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "ctfloyd/gojs",
+          "stars": 0,
+          "pushed_at": "2026-02-20T03:02:35Z",
+          "license_spdx": null
+        }
+      ]
+    },
+    "ecosystem-tmdb-search": {
+      "total_count": 3,
+      "items": [
+        {
+          "repository": "Api-Wrappers/tmdb-wrapper",
+          "stars": 11,
+          "pushed_at": "2026-09-07T06:19:10Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "oktay/movies",
+          "stars": 184,
+          "pushed_at": "2026-06-06T07:39:48Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "blakejoy/tmdb-ts",
+          "stars": 94,
+          "pushed_at": "2026-02-17T00:06:56Z",
+          "license_spdx": "MIT"
+        }
+      ]
+    },
+    "ecosystem-trakt-broad-search": {
+      "total_count": 622,
+      "items": [
+        {
+          "repository": "chrisbanes/tivi",
+          "stars": 6719,
+          "pushed_at": "2024-11-12T18:56:00Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "trakt/Plex-Trakt-Scrobbler",
+          "stars": 1457,
+          "pushed_at": "2022-01-04T18:08:06Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "iamkroot/trakt-scrobbler",
+          "stars": 556,
+          "pushed_at": "2026-10-30T19:56:22Z",
+          "license_spdx": "GPL-2.0"
+        },
+        {
+          "repository": "tegon/traktflix",
+          "stars": 397,
+          "pushed_at": "2022-10-10T18:02:44Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "trakt/trakt-api",
+          "stars": 376,
+          "pushed_at": "2026-11-03T16:28:18Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "razzeee/script.trakt",
+          "stars": 362,
+          "pushed_at": "2026-10-26T10:16:45Z",
+          "license_spdx": "GPL-2.0"
+        },
+        {
+          "repository": "xbgmsharp/trakt",
+          "stars": 320,
+          "pushed_at": "2026-03-18T09:43:49Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "xaf/TraktForVLC",
+          "stars": 314,
+          "pushed_at": "2019-02-03T19:41:11Z",
+          "license_spdx": null
+        },
+        {
+          "repository": "huangxd-/ForwardWidgets",
+          "stars": 267,
+          "pushed_at": "2026-11-01T04:32:22Z",
+          "license_spdx": "Apache-2.0"
+        },
+        {
+          "repository": "TheUltimateC0der/listrr",
+          "stars": 248,
+          "pushed_at": "2022-12-08T09:01:09Z",
+          "license_spdx": "GPL-3.0"
+        },
+        {
+          "repository": "RileyXX/IMDB-Trakt-Syncer",
+          "stars": 209,
+          "pushed_at": "2026-07-20T04:20:27Z",
+          "license_spdx": "MIT"
+        },
+        {
+          "repository": "trossr32/sonarr-radarr-lidarr-autosearch-browser-extension",
+          "stars": 193,
+          "pushed_at": "2026-07-04T09:37:35Z",
+          "license_spdx": "MPL-2.0"
+        }
+      ]
+    },
+    "ecosystem-trakt-search": {
+      "total_count": 0,
+      "items": []
+    }
+  },
+  "documents": {
+    "ecosystem-aether-license": {
+      "path": "LICENSE",
+      "git_blob_sha": "8fef515e713ba681cd1a6e182832cacaac159a57",
+      "html_url": "https://github.com/superuser404notfound/AetherEngine/blob/main/LICENSE",
+      "bytes": 9581
+    },
+    "ecosystem-bangumi-readme": {
+      "path": "README.md",
+      "git_blob_sha": "ee16db6a77452f26438f93fce0207038cbc699c4",
+      "html_url": "https://github.com/bangumi/api/blob/master/README.md",
+      "bytes": 521
+    },
+    "ecosystem-binit-readme": {
+      "path": "README.md",
+      "git_blob_sha": "6b59e2678c8e671b42257abcfc43f5d34aa41fec",
+      "html_url": "https://github.com/BinitDOX/Manga-Colorizer/blob/revamp/README.md",
+      "bytes": 10752
+    },
+    "ecosystem-codeeditorview-readme": {
+      "path": "README.md",
+      "git_blob_sha": "00db97b2a7d8247c7b68d33d1501697abbb24f70",
+      "html_url": "https://github.com/mchakravarty/CodeEditorView/blob/main/README.md",
+      "bytes": 3068
+    },
+    "ecosystem-codemirror-readme": {
+      "path": "README.md",
+      "git_blob_sha": "06ad2e48dd7db0b4d27de28f420ea71e5dcdb70f",
+      "html_url": "https://github.com/codemirror/dev/blob/main/README.md",
+      "bytes": 1589
+    },
+    "ecosystem-comfy-server": {
+      "path": "server.py",
+      "git_blob_sha": "3eb75d925bbe2b50e03c75bf5a2035eb67675caa",
+      "html_url": "https://github.com/Comfy-Org/ComfyUI/blob/master/server.py",
+      "bytes": 70872
+    },
+    "ecosystem-goquickjs-readme": {
+      "path": "README.md",
+      "git_blob_sha": "aab3f0d0010a76099b5d2f96bb3f16ad0d37f357",
+      "html_url": "https://github.com/go-quickjs/go-quickjs/blob/main/README.md",
+      "bytes": 6743
+    },
+    "ecosystem-magpie-gomod": {
+      "path": "go.mod",
+      "git_blob_sha": "11642a8517086c7a452c94d5fa352b208a74c355",
+      "html_url": "https://github.com/yetone/magpie/blob/main/go.mod",
+      "bytes": 2562
+    },
+    "ecosystem-manga-v2-readme": {
+      "path": "readme.md",
+      "git_blob_sha": "2fa809cc0e83d7666beeeb2512edf889fbc9dce0",
+      "html_url": "https://github.com/qweasdd/manga-colorization-v2/blob/master/readme.md",
+      "bytes": 1193
+    },
+    "ecosystem-manganinjia-license": {
+      "path": "LICENSE",
+      "git_blob_sha": "67846aa0c4d75d272acbec5d9f4fc91fdfe05bc4",
+      "html_url": "https://github.com/ali-vilab/MangaNinjia/blob/main/LICENSE",
+      "bytes": 19917
+    },
+    "ecosystem-moejs-readme": {
+      "path": "README.md",
+      "git_blob_sha": "8b9f11d647e6a8edd664fd0ae4f5dfaf0dbfab9e",
+      "html_url": "https://github.com/MoeForge/moejs/blob/main/README.md",
+      "bytes": 17493
+    },
+    "ecosystem-monaco-readme": {
+      "path": "README.md",
+      "git_blob_sha": "e17867b5a555606dc3287b6f9cf72b622a8aedb9",
+      "html_url": "https://github.com/microsoft/monaco-editor/blob/main/README.md",
+      "bytes": 7730
+    },
+    "ecosystem-runestone-package": {
+      "path": "Package.swift",
+      "git_blob_sha": "ab6e1227af92f4b1d7f5cafd2f5993d5515b259c",
+      "html_url": "https://github.com/simonbs/Runestone/blob/main/Package.swift",
+      "bytes": 1362
+    },
+    "ecosystem-runestone-readme": {
+      "path": "README.md",
+      "git_blob_sha": "372395c1820ba8aa663fcfc78467f5cfc5a36104",
+      "html_url": "https://github.com/simonbs/Runestone/blob/main/README.md",
+      "bytes": 7966
+    },
+    "ecosystem-slowjs-readme": {
+      "path": "README.md",
+      "git_blob_sha": "5d742dd82deb17fe8f49626f3edafb21fb6eb933",
+      "html_url": "https://github.com/liustack/slowjs/blob/main/README.md",
+      "bytes": 13760
+    },
+    "ecosystem-syntaxeditorui-bridge": {
+      "path": "Sources/SourceModelBridge/SourceModelBridge.m",
+      "git_blob_sha": "8e144e0a1a6236af22781b47079d4ecf5c86d750",
+      "html_url": "https://github.com/lynnswap/SyntaxEditorUI/blob/main/Sources/SourceModelBridge/SourceModelBridge.m",
+      "bytes": 44155
+    },
+    "ecosystem-syntaxeditorui-package": {
+      "path": "Package.swift",
+      "git_blob_sha": "010d3aed05925ab159253ebfda70430653eed3a6",
+      "html_url": "https://github.com/lynnswap/SyntaxEditorUI/blob/main/Package.swift",
+      "bytes": 16475
+    },
+    "ecosystem-syntaxeditorui-prepare": {
+      "path": "Sources/SyntaxEditorHighlighting/SyntaxEditorHighlighting+Prepare.swift",
+      "git_blob_sha": "84bd97c00a99004023bedbd0f42ee2ec726d4fe3",
+      "html_url": "https://github.com/lynnswap/SyntaxEditorUI/blob/main/Sources/SyntaxEditorHighlighting/SyntaxEditorHighlighting%2BPrepare.swift",
+      "bytes": 1720
+    },
+    "ecosystem-syntaxeditorui-readme": {
+      "path": "README.md",
+      "git_blob_sha": "ef618777f4cf0e16af3252b0ac064437e9482c83",
+      "html_url": "https://github.com/lynnswap/SyntaxEditorUI/blob/main/README.md",
+      "bytes": 2812
+    },
+    "ecosystem-tmdb-package": {
+      "path": "package.json",
+      "git_blob_sha": "239a393e89bd96a5d64f9c273657fd7b1e9c9869",
+      "html_url": "https://github.com/blakejoy/tmdb-ts/blob/main/package.json",
+      "bytes": 1232
+    },
+    "ecosystem-trakt-package": {
+      "path": "projects/api/package.json",
+      "git_blob_sha": "d02f8a1856c58772da458f519cb034a0d56e594e",
+      "html_url": "https://github.com/trakt/trakt-api/blob/master/projects/api/package.json",
+      "bytes": 568
+    },
+    "ecosystem-trakt-readme": {
+      "path": "README.md",
+      "git_blob_sha": "b5de5e30873442d33e00de94c8d9dcb07d33144a",
+      "html_url": "https://github.com/trakt/trakt-api/blob/master/README.md",
+      "bytes": 5858
+    }
+  },
+  "license_inspection_notes": {
+    "MangaNinjia": "CC BY-NC 4.0 in actual LICENSE",
+    "manga-colorization-v2": "no root license found, weight license unresolved",
+    "AetherEngine": "current LICENSE LGPL-3.0 with App Store/DRM exception; not automatically attributed to old shipped revisions",
+    "slowjs": "mixed MIT/BSD/ICU notices; GitHub NOASSERTION is not absence of a license",
+    "CodeMirror": "GitHub development repository moved to author forge; npm packages remain the consumption mechanism"
+  }
+}

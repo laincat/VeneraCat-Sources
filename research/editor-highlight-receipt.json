@@ -1,0 +1,22 @@
+{
+  "scope": "Node parser/highlighter only; not WebView editing, IME, touch, accessibility or iOS performance",
+  "packages": {
+    "@codemirror/lang-javascript": "6.2.5",
+    "@codemirror/lang-json": "6.0.2",
+    "@lezer/highlight": "1.2.5"
+  },
+  "results": [
+    {
+      "name": "existing Plex JavaScript",
+      "characters": 8068,
+      "highlightSpans": 1366,
+      "parseAndHighlightMs": 44.251000000000005
+    },
+    {
+      "name": "JSON catalogue",
+      "characters": 91399,
+      "highlightSpans": 16805,
+      "parseAndHighlightMs": 90.5738
+    }
+  ]
+}

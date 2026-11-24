@@ -1,0 +1,14 @@
+{
+  "module": "github.com/MoeForge/moejs v0.1.0-alpha.11.0.20261028053351-0a0ed36ae7db",
+  "checks": {
+    "aborted": true,
+    "body": true,
+    "headers": true,
+    "networkDisabled": true,
+    "query": true,
+    "typescriptEnumRejected": true,
+    "typescriptTypeErasure": true,
+    "urlQuery": true
+  },
+  "scope": "library-level test with no http.Client; not Core host integration or iOS/streaming-connection validation"
+}

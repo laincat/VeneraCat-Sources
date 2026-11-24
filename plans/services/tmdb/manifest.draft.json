@@ -1,0 +1,38 @@
+{
+  "schema": "veneracat-service/1-draft",
+  "id": "service.tmdb",
+  "version": "0.1.0",
+  "status": "design-only-not-installable",
+  "runtime": "javascript-esm",
+  "entry": "index.mjs",
+  "capabilities": [
+    "metadata",
+    "artwork",
+    "account-lists-optional"
+  ],
+  "authMethods": [
+    "api-read-token",
+    "user-session-optional"
+  ],
+  "networkOrigins": [
+    "https://api.themoviedb.org",
+    "https://image.tmdb.org",
+    "https://www.themoviedb.org"
+  ],
+  "upstream": "https://github.com/blakejoy/tmdb-ts",
+  "secretStorage": "host-vault-per-profile-plugin-account",
+  "notes": [
+    "Existing iOS TMDB key is application API authorization, not completed user-account login",
+    "Evaluate browser-target SDK bundle against the real Core runtime before adopting"
+  ],
+  "supports": {
+    "platforms": [
+      "ios",
+      "macos",
+      "windows"
+    ],
+    "requiresCapabilities": [
+      "service.v1"
+    ]
+  }
+}

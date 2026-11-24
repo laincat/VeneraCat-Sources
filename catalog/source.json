@@ -1,0 +1,178 @@
+{
+  "$schema": "veneracat-source/1-draft",
+  "id": "veneracat.official",
+  "name": "VeneraCat 官方合集",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "laincat"
+  },
+  "description": "一个跨端内容合集；按内容种类分类，平台兼容性在条目中声明。",
+  "entries": [
+    {
+      "id": "plex",
+      "kind": "video-source",
+      "name": "Plex",
+      "key": "plex",
+      "version": "0.1.0",
+      "filename": "plex.js",
+      "license": "GPL-3.0-only",
+      "input": {
+        "file": "catalog/packages/plex/plex.js"
+      },
+      "verification": {
+        "level": "experimental",
+        "scope": "Existing XML fixture tests; actual Core install checked separately; no real Plex server acceptance"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "video-source.js"
+        ]
+      },
+      "status": "experimental"
+    },
+    {
+      "id": "example-theme",
+      "kind": "theme",
+      "name": "主题格式示例 / Theme format example",
+      "version": "0.1.0",
+      "filename": "theme.json",
+      "license": "GPL-3.0-only",
+      "input": {
+        "file": "templates/theme-legacy/theme.json"
+      },
+      "verification": {
+        "level": "format-example",
+        "scope": "Current Nekularity Theme data fields only; no layout or script capabilities"
+      },
+      "supports": {
+        "platforms": [
+          "ios"
+        ],
+        "requiresCapabilities": [
+          "theme.legacy-json"
+        ]
+      },
+      "status": "example"
+    },
+    {
+      "id": "reader-preferences",
+      "kind": "settings-module",
+      "name": "阅读偏好示例",
+      "version": "0.1.0",
+      "filename": "reader-preferences.vcmodule",
+      "license": "GPL-3.0-only",
+      "input": {
+        "file": "templates/modules/reader-preferences.vcmodule"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "settings-module.v1"
+        ]
+      },
+      "status": "prototype",
+      "verification": {
+        "level": "format-example",
+        "scope": "Surge-inspired declarations only; no current client executor"
+      }
+    },
+    {
+      "id": "service.trakt",
+      "kind": "service",
+      "name": "Trakt",
+      "version": "0.1.0",
+      "status": "planned",
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "service.v1"
+        ]
+      },
+      "design": "plans/services/trakt/manifest.draft.json",
+      "verification": {
+        "level": "design-only",
+        "scope": "not installable"
+      }
+    },
+    {
+      "id": "service.tmdb",
+      "kind": "service",
+      "name": "TMDB",
+      "version": "0.1.0",
+      "status": "planned",
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "service.v1"
+        ]
+      },
+      "design": "plans/services/tmdb/manifest.draft.json",
+      "verification": {
+        "level": "design-only",
+        "scope": "not installable"
+      }
+    },
+    {
+      "id": "service.bangumi",
+      "kind": "service",
+      "name": "Bangumi",
+      "version": "0.1.0",
+      "status": "planned",
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "service.v1"
+        ]
+      },
+      "design": "plans/services/bangumi/manifest.draft.json",
+      "verification": {
+        "level": "design-only",
+        "scope": "not installable"
+      }
+    },
+    {
+      "id": "image.colorization.comfyui",
+      "kind": "image-enhancer",
+      "name": "漫画AI上色 / ComfyUI",
+      "version": "0.1.0",
+      "status": "planned",
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "image-enhancer.v1",
+          "external-inference-service"
+        ]
+      },
+      "design": "plans/image-enhancers/comfyui/manifest.draft.json",
+      "verification": {
+        "level": "design-only",
+        "scope": "not installable; no model inference performed"
+      }
+    }
+  ]
+}

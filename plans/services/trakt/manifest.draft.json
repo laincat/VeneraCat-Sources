@@ -1,0 +1,39 @@
+{
+  "schema": "veneracat-service/1-draft",
+  "id": "service.trakt",
+  "version": "0.1.0",
+  "status": "design-only-not-installable",
+  "runtime": "javascript-esm",
+  "entry": "index.mjs",
+  "capabilities": [
+    "account",
+    "metadata",
+    "watchlist",
+    "history",
+    "scrobble"
+  ],
+  "authMethods": [
+    "oauth-public-client-pkce-if-supported-by-registered-app",
+    "device-authorization-if-supported"
+  ],
+  "networkOrigins": [
+    "https://api.trakt.tv",
+    "https://trakt.tv"
+  ],
+  "upstream": "https://github.com/trakt/trakt-api",
+  "secretStorage": "host-vault-per-profile-plugin-account",
+  "notes": [
+    "Official TypeScript contract is source-first, package version 0.0.0; no published stable SDK assumption",
+    "OAuth registration and real-account validation are external prerequisites"
+  ],
+  "supports": {
+    "platforms": [
+      "ios",
+      "macos",
+      "windows"
+    ],
+    "requiresCapabilities": [
+      "service.v1"
+    ]
+  }
+}

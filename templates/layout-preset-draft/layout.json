@@ -1,0 +1,8 @@
+{
+  "schema": "veneracat-layout/1-draft",
+  "status": "design-only-not-supported-by-current-clients",
+  "template": "sidebar-content",
+  "density": "comfortable",
+  "modules": ["local-library", "installed-services", "sources", "settings"],
+  "note": "A future client resolves supported module IDs; this is not arbitrary native UI code."
+}

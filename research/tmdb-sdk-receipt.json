@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "core-js-pure": "3.51.0",
+    "esbuild": "0.28.2",
+    "tmdb-ts": "2.3.0"
+  },
+  "before": "URLSearchParams is not defined",
+  "after": "PASS actual Core module load and authenticated search fixture after bundling core-js-pure URLSearchParams",
+  "bundle_bytes": 53619,
+  "bundle_sha256": "039d137b037a6d5fafbcf4c07044544d233f90450c3cc5560595da37fefbb889",
+  "core": "c0f0dfa source tree",
+  "scope": "one search endpoint through injected host; no real HTTP, account, mobile/UI, complete SDK or service-plugin lifecycle"
+}

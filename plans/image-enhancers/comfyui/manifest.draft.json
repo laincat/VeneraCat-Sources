@@ -1,0 +1,28 @@
+{
+  "schema": "veneracat-image-enhancer/1-draft",
+  "id": "image.colorization.comfyui",
+  "version": "0.1.0",
+  "status": "design-only-not-installable",
+  "runtime": "javascript-esm",
+  "inference": "external user-configured ComfyUI service",
+  "model": "not selected; model and weight licenses must both be established",
+  "sourceBytes": "immutable",
+  "result": "derived cache with source/model/workflow hashes",
+  "concurrency": {
+    "foregroundPerDevice": 1,
+    "prefetchPages": 1
+  },
+  "cancellation": "prefer capability-detected /api/jobs/{job_id}/cancel; never send unscoped interrupt to shared server",
+  "upstream": "https://github.com/Comfy-Org/ComfyUI",
+  "supports": {
+    "platforms": [
+      "ios",
+      "macos",
+      "windows"
+    ],
+    "requiresCapabilities": [
+      "image-enhancer.v1",
+      "external-inference-service"
+    ]
+  }
+}

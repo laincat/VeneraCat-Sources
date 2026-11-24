@@ -1,0 +1,17 @@
+{
+  "Nekularity": {
+    "head": "f13099db34b575707b54c0824bb41508d223284e",
+    "status": "",
+    "remote": "origin\thttps://github.com/laincat/Nekularity.git (fetch)\norigin\thttps://github.com/laincat/Nekularity.git (push)"
+  },
+  "Nekophage": {
+    "head": "829da619e7c59fad249240edda172ede2a7b20b7",
+    "status": "",
+    "remote": ""
+  },
+  "VeneraCat Core": {
+    "head": "c0f0dfa00c8a4daf7ce58fea5b615bc24eab88b7",
+    "status": "",
+    "remote": "origin\thttps://github.com/laincat/VeneraCat-Core.git (fetch)\norigin\thttps://github.com/laincat/VeneraCat-Core.git (push)"
+  }
+}

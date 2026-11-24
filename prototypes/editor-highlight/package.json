@@ -1,0 +1,11 @@
+{
+  "name": "nekularity-editor-dependency-evaluation",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.5",
+    "@codemirror/lang-json": "^6.0.2",
+    "@lezer/highlight": "^1.2.5"
+  }
+}

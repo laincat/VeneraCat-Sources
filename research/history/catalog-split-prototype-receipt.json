@@ -1,0 +1,28 @@
+{
+  "builder": "PASS",
+  "reproducible_files": 19,
+  "core": "c0f0dfa source tree",
+  "contract": "3 generated video indexes parsed and Plex installed in real Core; 3 empty comic indexes parsed; no network",
+  "scope": "not a real Plex server or GUI test; draft service/theme catalog consumers are not implemented",
+  "file_sha256": {
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "manifest.json": "be9f729e13fe4d62c4d5253c6af87255e97243ed95bbf9339b0d3c53b8895284",
+    "VeneraCat Core\\plugins\\index.json": "51c9446187967fd02b82f0beebf34c499e4e327ffe9a72e1df5fdc53746f9d5a",
+    "VeneraCat Core\\subscriptions\\comic.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "VeneraCat Core\\subscriptions\\index.json": "c22bebbedd5c5018608765d7a42987fb223ee14f07f4ed13fead8f981ee130e9",
+    "VeneraCat Core\\subscriptions\\vcvideo.json": "d51f3f2f19870c2fa3f995cc9c31236f5319d731389d58a2b3ce9d2fd36cec4e",
+    "VeneraCat Core\\themes\\index.json": "e2f5c1f19f5839f7a9ddce1e3f298c51404e44ad8d823132395b8abc04b12093",
+    "packages\\example-theme\\theme.json": "f661b1b87d0657007ea62814d054d942f0fa444e71dd92b0ea2b8935029a2973",
+    "packages\\plex\\plex.js": "ec2135c0a5d2a6333950f9578ebf510c9b4e679afc336cf74cc9885d1d6b7069",
+    "Nekularity\\plugins\\index.json": "b47086f5ab608f2b308ed8d94df82a5c3b0c058dff1d0ee3e47e549faa25d9c8",
+    "Nekularity\\subscriptions\\comic.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "Nekularity\\subscriptions\\index.json": "d4d4bb03cdf4021110dbdc5f675d74cf8d86c7c83606ec10182378d21be960b1",
+    "Nekularity\\subscriptions\\vcvideo.json": "5551bef6f73c94b45d63346a43bf82847f48eb83ae9cc062d15a1cbb75113389",
+    "Nekularity\\themes\\index.json": "59117931cdd28d2eedcc8b3511fa16b64c7df7a60bff202b85ea8018836c341b",
+    "Nekophage\\plugins\\index.json": "69def7a678ab65d7d92652e5dc7e425f9d0d1d15d7bb0e9da1a86ff5efe29e66",
+    "Nekophage\\subscriptions\\comic.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "Nekophage\\subscriptions\\index.json": "d58a7085767a142593e3fe9e37c9e7cee96f999f2e8d25dfd5b5008bb5a5bd0e",
+    "Nekophage\\subscriptions\\vcvideo.json": "ee60600db40266008b830f78fb22d0289f0e2fca9b5c70de7a5199552ad5684f",
+    "Nekophage\\themes\\index.json": "2fb783651e2660a25d8d414a22a50a513569c057d32017ccc8675250a9039be5"
+  }
+}

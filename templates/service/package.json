@@ -1,0 +1,8 @@
+{
+  "name": "@veneracat/example-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": "./index.mjs",
+  "license": "GPL-3.0-only"
+}
