@@ -1,0 +1,72 @@
+[
+  {
+    "id": "lnreader.ixdzs8",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=SSSSSSSSSSSSS级镇狱狂龙 chapters=1640 htmlBytes=7051",
+    "testedAt": "2026-11-24T00:58:37Z"
+  },
+  {
+    "id": "lnreader.quanben",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=鬼手天医 chapters=552 htmlBytes=25632",
+    "testedAt": "2026-11-24T00:59:07Z"
+  },
+  {
+    "id": "lnreader.linovel",
+    "step": "detail",
+    "status": "fail",
+    "reason": "Get https://www.linovel.net/book/100021.html: context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "testedAt": "2026-11-24T01:03:08Z"
+  },
+  {
+    "id": "lnreader.lewenn",
+    "step": "search",
+    "status": "fail",
+    "reason": "upstream lewenn.js searchNovels() is hardcoded to return []",
+    "testedAt": "2026-11-24T01:00:34Z"
+  },
+  {
+    "id": "lnreader.69shu",
+    "step": "search",
+    "status": "fail",
+    "reason": "https://www.69shu.xyz/ returns HTTP 403 JS redirect anti-bot page (0 search results)",
+    "testedAt": "2026-11-24T01:00:33Z"
+  },
+  {
+    "id": "lnreader.novelbin",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=Dragon-Marked War God chapters=5087 htmlBytes=12843",
+    "testedAt": "2026-11-24T00:59:30Z"
+  },
+  {
+    "id": "lnreader.lightnoveltranslations",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=From The Strongest Job of Dragon Knight, To The Beginner Job Carrier chapters=35 htmlBytes=17651",
+    "testedAt": "2026-11-24T00:59:33Z"
+  },
+  {
+    "id": "lnreader.novelbuddy",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=RE: My Dragon Girlfriend In The Dragonic Apocalypse chapters=583 htmlBytes=8612",
+    "testedAt": "2026-11-24T00:59:46Z"
+  },
+  {
+    "id": "lnreader.novelhi",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=Immemorial Dragon Elephant Art chapters=6386 htmlBytes=10235",
+    "testedAt": "2026-11-24T01:02:15Z"
+  },
+  {
+    "id": "lnreader.wuxiaworld",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "book=Dragon Poor chapters=341 htmlBytes=767",
+    "testedAt": "2026-11-24T01:02:19Z"
+  }
+]

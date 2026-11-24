@@ -25,6 +25,7 @@ for (const item of [...input.entries].sort(byId)) {
   seenIds.add(item.id);
   if (!item.supports?.platforms?.length || !item.supports?.requiresCapabilities?.length) throw Error('missing compatibility declaration');
   const record = {id: item.id, kind: item.kind, name: item.name, version: item.version, status: item.status, license: item.license, supports: item.supports, verification: item.verification};
+  if (item.upstream) record.upstream = item.upstream;
   if (item.input) {
     if (typeof item.input.file !== 'string' || !item.input.file) throw Error('entry input must specify a local file');
     if (typeof item.filename !== 'string' || !item.filename || item.filename === '.' || item.filename === '..' || /[/\\]/.test(item.filename)) throw Error('artifact filename must be a basename');

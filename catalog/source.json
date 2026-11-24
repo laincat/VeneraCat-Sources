@@ -173,6 +173,376 @@
         "level": "design-only",
         "scope": "not installable; no model inference performed"
       }
+    },
+    {
+      "id": "lnreader.ixdzs8",
+      "kind": "novel-source",
+      "name": "爱下电子书",
+      "key": "lnreader_ixdzs8",
+      "version": "2.2.10",
+      "filename": "lnreader_ixdzs8.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.ixdzs8/lnreader_ixdzs8.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/chinese/ixdzs8.js",
+        "site": "https://ixdzs8.com/",
+        "pluginId": "ixdzs8",
+        "lang": "中文, 汉语, 漢語",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.quanben",
+      "kind": "novel-source",
+      "name": "Quanben",
+      "key": "lnreader_quanben",
+      "version": "1.1.2",
+      "filename": "lnreader_quanben.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.quanben/lnreader_quanben.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/chinese/Quanben.js",
+        "site": "https://www.quanben.io/",
+        "pluginId": "quanben",
+        "lang": "中文, 汉语, 漢語",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.linovel",
+      "kind": "novel-source",
+      "name": "linovel",
+      "key": "lnreader_linovel",
+      "version": "1.0.1",
+      "filename": "lnreader_linovel.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.linovel/lnreader_linovel.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/chinese/linovel.js",
+        "site": "https://www.linovel.net",
+        "pluginId": "linovel",
+        "lang": "中文, 汉语, 漢語",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.lewenn",
+      "kind": "novel-source",
+      "name": "乐文小说网",
+      "key": "lnreader_lewenn",
+      "version": "1.0.1",
+      "filename": "lnreader_lewenn.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.lewenn/lnreader_lewenn.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/chinese/lewenn.js",
+        "site": "https://www.lewenn.com/",
+        "pluginId": "lewenn",
+        "lang": "中文, 汉语, 漢語",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.69shu",
+      "kind": "novel-source",
+      "name": "69书吧",
+      "key": "lnreader_69shu",
+      "version": "0.2.2",
+      "filename": "lnreader_69shu.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.69shu/lnreader_69shu.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/chinese/69shu.js",
+        "site": "https://www.69shu.xyz",
+        "pluginId": "69shu",
+        "lang": "中文, 汉语, 漢語",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.novelbin",
+      "kind": "novel-source",
+      "name": "Novel Bin",
+      "key": "lnreader_novelbin",
+      "version": "3.0.2",
+      "filename": "lnreader_novelbin.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.novelbin/lnreader_novelbin.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/english/novelbin.js",
+        "site": "https://novelbin.xyz/",
+        "pluginId": "novelbin",
+        "lang": "English",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.lightnoveltranslations",
+      "kind": "novel-source",
+      "name": "Light Novel Translations",
+      "key": "lnreader_lightnoveltranslations",
+      "version": "1.0.3",
+      "filename": "lnreader_lightnoveltranslations.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.lightnoveltranslations/lnreader_lightnoveltranslations.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/english/lightnoveltranslation.js",
+        "site": "https://lightnovelstranslations.com/",
+        "pluginId": "lightnoveltranslations",
+        "lang": "English",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.novelbuddy",
+      "kind": "novel-source",
+      "name": "NovelBuddy",
+      "key": "lnreader_novelbuddy",
+      "version": "2.1.4",
+      "filename": "lnreader_novelbuddy.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.novelbuddy/lnreader_novelbuddy.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/english/novelbuddy.js",
+        "site": "https://novelbuddy.me/",
+        "pluginId": "novelbuddy",
+        "lang": "English",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.novelhi",
+      "kind": "novel-source",
+      "name": "NovelHi",
+      "key": "lnreader_novelhi",
+      "version": "1.1.3",
+      "filename": "lnreader_novelhi.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.novelhi/lnreader_novelhi.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/english/novelhi.js",
+        "site": "https://novelhi.com/",
+        "pluginId": "novelhi",
+        "lang": "English",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
+    },
+    {
+      "id": "lnreader.wuxiaworld",
+      "kind": "novel-source",
+      "name": "Wuxia World",
+      "key": "lnreader_wuxiaworld",
+      "version": "0.6.0",
+      "filename": "lnreader_wuxiaworld.js",
+      "license": "MIT",
+      "input": {
+        "file": "catalog/packages/lnreader.wuxiaworld/lnreader_wuxiaworld.js"
+      },
+      "upstream": {
+        "author": "LNReader contributors",
+        "repo": "https://github.com/LNReader/lnreader-plugins",
+        "url": "https://raw.githubusercontent.com/lnreader/lnreader-plugins/plugins/v3.0.0/.js/src/plugins/english/wuxiaworld.js",
+        "site": "https://www.wuxiaworld.com/",
+        "pluginId": "wuxiaworld",
+        "lang": "English",
+        "license": "MIT",
+        "converter": "lnreader/1.0.0"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "novel-source.js"
+        ]
+      },
+      "status": "experimental",
+      "verification": {
+        "level": "converted",
+        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+      }
     }
   ]
 }
