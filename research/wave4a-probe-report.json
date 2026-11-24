@@ -1,0 +1,161 @@
+{
+  "generatedAt": "2026-11-24T01:24:51.372Z",
+  "wave": "4A",
+  "summary": {
+    "lnreader": {
+      "sampleSize": 10,
+      "pass": 7,
+      "fail": 3,
+      "extraUpstreamBlocked": 3,
+      "detailReport": "research/novel-probe-report.json"
+    },
+    "legado": {
+      "sampleSize": 100,
+      "sourceRepo": "aoaostar/legado (release/sources/4dc410d1.json)",
+      "strictPureCssPass": 0,
+      "strictPureCssRatePercent": 0,
+      "expandedRelaxedPass": 2,
+      "expandedRelaxedRatePercent": 2,
+      "reasonFrequency": {
+        "UNSUPPORTED_JS_RULE": 83,
+        "UNSUPPORTED_SELECTOR_SYNTAX": 77,
+        "UNSUPPORTED_JSON_RULE": 50,
+        "UNSUPPORTED_STATIC_POST_OR_HEADER": 46,
+        "UNSUPPORTED_PAGINATION": 9,
+        "UNSUPPORTED_XPATH_RULE": 3,
+        "UNSUPPORTED_DYNAMIC_POST_OR_HEADER": 3
+      },
+      "decision": "frozen as pure-CSS import compatibility only",
+      "detailReport": "research/legado-100-audit.json"
+    },
+    "anime1": {
+      "status": "pass",
+      "windowsPlaybackVerified": true
+    },
+    "hongguo": {
+      "status": "fail",
+      "policyAction": "stopped without reverse-engineering; excluded from official catalog"
+    }
+  },
+  "entries": [
+    {
+      "id": "lnreader.ixdzs8",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=SSSSSSSSSSSSS级镇狱狂龙 chapters=1640 htmlBytes=7051",
+      "testedAt": "2026-11-24T00:58:37Z"
+    },
+    {
+      "id": "lnreader.quanben",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=鬼手天医 chapters=552 htmlBytes=25632",
+      "testedAt": "2026-11-24T00:59:07Z"
+    },
+    {
+      "id": "lnreader.linovel",
+      "step": "detail",
+      "status": "fail",
+      "reason": "site blocks non-browser clients (curl HTTP 403 in 0.95s; Go HTTP client timeout awaiting headers)",
+      "testedAt": "2026-11-24T01:07:20Z"
+    },
+    {
+      "id": "lnreader.lewenn",
+      "step": "search",
+      "status": "fail",
+      "reason": "upstream lewenn.js searchNovels() is hardcoded to return []",
+      "testedAt": "2026-11-24T01:00:34Z"
+    },
+    {
+      "id": "lnreader.69shu",
+      "step": "search",
+      "status": "fail",
+      "reason": "https://www.69shu.xyz/ returns HTTP 403 JS redirect anti-bot page (0 search results)",
+      "testedAt": "2026-11-24T01:00:33Z"
+    },
+    {
+      "id": "lnreader.linovelib",
+      "step": "search",
+      "status": "fail",
+      "reason": "upstream linovelib.js hardcodes http://localhost:5301/api/search (excluded from catalog)",
+      "testedAt": "2026-11-24T00:59:05Z"
+    },
+    {
+      "id": "lnreader.linovelib_tw",
+      "step": "search",
+      "status": "fail",
+      "reason": "碰到人机验证，不支持 (CloudflareException; excluded from catalog)",
+      "testedAt": "2026-11-24T00:59:05Z"
+    },
+    {
+      "id": "lnreader.novel543",
+      "step": "search",
+      "status": "fail",
+      "reason": "碰到人机验证，不支持 (CloudflareException; excluded from catalog)",
+      "testedAt": "2026-11-24T00:59:06Z"
+    },
+    {
+      "id": "lnreader.novelbin",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=Dragon-Marked War God chapters=5087 htmlBytes=12843",
+      "testedAt": "2026-11-24T00:59:30Z"
+    },
+    {
+      "id": "lnreader.lightnoveltranslations",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=From The Strongest Job of Dragon Knight, To The Beginner Job Carrier chapters=35 htmlBytes=17651",
+      "testedAt": "2026-11-24T00:59:33Z"
+    },
+    {
+      "id": "lnreader.novelbuddy",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=RE: My Dragon Girlfriend In The Dragonic Apocalypse chapters=583 htmlBytes=8612",
+      "testedAt": "2026-11-24T00:59:46Z"
+    },
+    {
+      "id": "lnreader.novelhi",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=Immemorial Dragon Elephant Art chapters=6386 htmlBytes=10235",
+      "testedAt": "2026-11-24T01:02:15Z"
+    },
+    {
+      "id": "lnreader.wuxiaworld",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=Dragon Poor chapters=341 htmlBytes=767",
+      "testedAt": "2026-11-24T01:02:19Z"
+    },
+    {
+      "id": "legado.quanben-io",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "pure-CSS Legado rule compiled to standalone novel-js and passed 4 steps in Core MoeJS (chapters=47, htmlBytes=25632)",
+      "testedAt": "2026-11-24T01:11:32Z"
+    },
+    {
+      "id": "legado.audit-100",
+      "step": "convert",
+      "status": "fail",
+      "reason": "0/100 (0%) strict pure-CSS, 2/100 (2%) with pagination+XPath+static POST/headers relaxed (83 JS, 77 selector, 50 JSON); frozen as import-only",
+      "testedAt": "2026-11-24T01:18:27Z"
+    },
+    {
+      "id": "anime1",
+      "step": "play",
+      "status": "pass",
+      "reason": "search->details(10 eps)->play(mp4, per-episode isolated Cookie/Referer: 206 ftypisom vs 403 without cookie)->Windows Nekophage player playback OK (readyState=4, 1280px, 1.99s->3.99s)",
+      "testedAt": "2026-11-24T01:22:10Z"
+    },
+    {
+      "id": "hongguo",
+      "step": "play",
+      "status": "fail",
+      "reason": "web pages return catalog(24) and details(71 eps) but episodes 1-3 carry no public web playback URL and require official App signed APIs; stopped per policy, not added to official catalog",
+      "testedAt": "2026-11-24T01:24:20Z"
+    }
+  ]
+}
