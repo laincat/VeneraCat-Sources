@@ -35,6 +35,16 @@
     "hongguo": {
       "status": "fail",
       "policyAction": "stopped without reverse-engineering; excluded from official catalog"
+    },
+    "zhHandwritten": {
+      "sampleSize": 3,
+      "pass": 3,
+      "fail": 0,
+      "ids": [
+        "biquge365",
+        "txtduo",
+        "heifenxs"
+      ]
     }
   },
   "entries": [
@@ -156,6 +166,27 @@
       "status": "fail",
       "reason": "web pages return catalog(24) and details(71 eps) but episodes 1-3 carry no public web playback URL and require official App signed APIs; stopped per policy, not added to official catalog",
       "testedAt": "2026-11-24T01:24:20Z"
+    },
+    {
+      "id": "biquge365",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=龙傲天男主也会怀崽吗 chapters=21 htmlBytes=3197 (first-party novel-js, https://www.biquge365.net)",
+      "testedAt": "2026-11-24T01:44:04Z"
+    },
+    {
+      "id": "txtduo",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=男欢女爱作者:久石 chapters=10 htmlBytes=28652 (first-party novel-js, http://www.txtduo.com)",
+      "testedAt": "2026-11-24T01:44:08Z"
+    },
+    {
+      "id": "heifenxs",
+      "step": "chapter",
+      "status": "pass",
+      "reason": "book=美校炮灰，但被老钱暗恋了_龙牙兔【完结】 chapters=10 htmlBytes=11462 (first-party novel-js, http://m.heifenxs.org)",
+      "testedAt": "2026-11-24T01:44:11Z"
     }
   ]
 }
