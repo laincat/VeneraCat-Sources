@@ -1,0 +1,145 @@
+{
+  "converter": "legado-css/1.0.0",
+  "testedAt": "2026-11-24T01:11:54.975Z",
+  "upstreamSample": "https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan (first 20 Chinese sources)",
+  "total": 20,
+  "convertedCount": 0,
+  "rejectedCount": 20,
+  "conversionRatePercent": 0,
+  "rejectionBreakdown": {
+    "UNSUPPORTED_JS_RULE": 9,
+    "UNSUPPORTED_POST_OR_DYNAMIC_HEADER": 6,
+    "UNSUPPORTED_PAGINATION": 3,
+    "UNSUPPORTED_XPATH_RULE": 2
+  },
+  "rejected": [
+    {
+      "name": "起点中文",
+      "url": "https://www.qidian.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "番茄小说2",
+      "url": "https://fqapi.komr.cn",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "酷我小说",
+      "url": "http://appi.kuwo.cn",
+      "code": "UNSUPPORTED_POST_OR_DYNAMIC_HEADER",
+      "detail": "Custom/dynamic bookSource header"
+    },
+    {
+      "name": "69书吧.com",
+      "url": "https://www.69shuba.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "69书吧",
+      "url": "https://69shuba.cx",
+      "code": "UNSUPPORTED_POST_OR_DYNAMIC_HEADER",
+      "detail": "searchUrl contains POST/request options block"
+    },
+    {
+      "name": "速读谷",
+      "url": "https://www.sudugu.co",
+      "code": "UNSUPPORTED_POST_OR_DYNAMIC_HEADER",
+      "detail": "searchUrl contains POST/request options block"
+    },
+    {
+      "name": "得奇小说网",
+      "url": "https://www.deqixs.com",
+      "code": "UNSUPPORTED_PAGINATION",
+      "detail": "ruleToc.nextTocUrl is set"
+    },
+    {
+      "name": "快书网",
+      "url": "https://www.kuaishu5.com",
+      "code": "UNSUPPORTED_PAGINATION",
+      "detail": "ruleToc.nextTocUrl is set"
+    },
+    {
+      "name": "天天看小说",
+      "url": "https://cn.ttkan.co",
+      "code": "UNSUPPORTED_XPATH_RULE",
+      "detail": "XPath rule in //meta[@name='og:novel:book_name']/@content"
+    },
+    {
+      "name": "独步小说网",
+      "url": "https://www.dbxsd.com",
+      "code": "UNSUPPORTED_PAGINATION",
+      "detail": "ruleContent.nextContentUrl is set"
+    },
+    {
+      "name": "手机小说",
+      "url": "https://www.shoujix.com",
+      "code": "UNSUPPORTED_POST_OR_DYNAMIC_HEADER",
+      "detail": "Custom/dynamic bookSource header"
+    },
+    {
+      "name": "铅笔小说",
+      "url": "https://www.23qb.com",
+      "code": "UNSUPPORTED_XPATH_RULE",
+      "detail": "XPath rule in //meta[@property='og:novel:book_name']/@content"
+    },
+    {
+      "name": "来看文学",
+      "url": "https://m.laikan9.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "大文学无错小说网",
+      "url": "https://www.wcxsw.org",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "和图书",
+      "url": "https://hetushu.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "思路客",
+      "url": "https://www.siluke.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "顶点小说 ddxs",
+      "url": "https://www.ddxs.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS expression in searchUrl/header/loginUrl"
+    },
+    {
+      "name": "艾途小说",
+      "url": "https://m.aitbooks.com",
+      "code": "UNSUPPORTED_POST_OR_DYNAMIC_HEADER",
+      "detail": "searchUrl contains POST/request options block"
+    },
+    {
+      "name": "阅友小说",
+      "url": "http://m.suixkan.com",
+      "code": "UNSUPPORTED_JS_RULE",
+      "detail": "JS rule in @onclick@js:result.match(/\\('(.*?)', '', ''\\)/)[1]"
+    },
+    {
+      "name": "就爱文学",
+      "url": "http://www.92xs.info",
+      "code": "UNSUPPORTED_POST_OR_DYNAMIC_HEADER",
+      "detail": "searchUrl contains POST/request options block"
+    }
+  ],
+  "endToEndPureCssVerification": {
+    "id": "legado.quanben-io",
+    "site": "https://www.quanben.io",
+    "step": "chapter",
+    "status": "pass",
+    "reason": "Generated standalone novel-js ran search -> detail -> chapters (47) -> chapter (25632 bytes) in Core MoeJS runtime",
+    "testedAt": "2026-11-24T01:11:32Z"
+  }
+}
