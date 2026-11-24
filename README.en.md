@@ -9,6 +9,7 @@ This is a local prototype without a remote repository,publication URL or automat
 ## Documentation
 
 - [Source,collection,entry,subscription and module boundaries](docs/SOURCE-BOUNDARY.en.md)
+- [Service plugin packages (Bangumi / TMDB / Trakt)](docs/SERVICES.en.md)
 - [Project state,upstream dependencies,Magpie,editors and themes](docs/ECOSYSTEM.en.md)
 - [AI manga colorization plan](docs/COLORIZATION.en.md)
 - [GitHub search/source evidence](research/github-2026-11-04.json)
@@ -41,15 +42,16 @@ Requires Node.js 20+ only; no network,Git,adjacent repository or npm installatio
 ```sh
 node tools/build.mjs
 node prototypes/catalog-contract/run.mjs
+node --test tools/convert/legado/convert.test.mjs tools/services/services.test.mjs
 ```
 
-The second also needs adjacent VeneraCat Core and its Go dependencies. It checks one collection,artifact hashes and platform/capability declarations,asserts no per-client publication folders exist,and uses actual Core to parse the legacy video adapter/install Plex.
+The second also needs adjacent VeneraCat Core and its Go dependencies. It checks one collection,artifact hashes and platform/capability declarations,asserts no per-client publication folders exist,verifies real Core installation and execution of the `service.{bangumi,tmdb,trakt}` zip packages,and parses the legacy video adapter/installs video plugins.
 
 Other optional prototypes: `node prototypes/moejs-webapi/run.mjs`; `npm install --no-package-lock` then `node check.mjs` in `prototypes/editor-highlight`; and the TMDB prototype's README. These are not production client implementations.
 
 ## Current content and compatibility
 
-One collection contains Plex,a theme example,a Surge-style reading-preferences example,and Trakt/TMDB/Bangumi/colorization designs. Content,prototypes and plans have distinct statuses; plans have no installable artifact.
+One collection contains video/novel sources,a theme example,a Surge-style reading-preferences example,packaged Trakt/TMDB/Bangumi service zips (`experimental`, `fixture-verified`),and the colorization design. Content,prototypes and plans have distinct statuses; plans have no installable artifact.
 
 - `source.json` is a new draft protocol without a current unified client consumer.
 - `compat/vcvideo.json` adapts the existing video index format from the same collection,without independent ownership,and stays until clients install video sources directly from the unified collection. Old clients cannot yet install every kind through the new single entry point.

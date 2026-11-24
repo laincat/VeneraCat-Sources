@@ -34,7 +34,7 @@ Each entry carries:
 {
   "id": "service.tmdb",
   "kind": "service",
-  "status": "planned",
+  "status": "experimental",
   "supports": {
     "platforms": ["ios", "macos", "windows"],
     "requiresCapabilities": ["service.v1"]
@@ -70,8 +70,8 @@ A shared collection does not share all runtimes or accounts. JS plugins,Magpie p
 
 Preserve body-digest semantics for legacy single-file sources;archives receive separate archive hashes. Digests do not prove publisher identity. Subscription,installation,enablement and authorization remain separate;a collection gains no whole-library/account access merely by being subscribed.
 
-## 6. Changes in this iteration
+## 6. Current iteration
 
-Removed the three project selectors/publication folders. One collection now contains7entries,3content artifacts and4non-installable designs. Platform differences are supports annotations. The builder is offline;actual Core install validation uses legacy formats derived from that one collection.
+The single cross-platform collection remains unified without per-client publication folders. Trakt, TMDB, and Bangumi are now packaged as installable `service.js` zip archives under `catalog/packages/` and `build/packages/` (`fixture-verified`: offline mock-host tests and real Core `service.Store`/`service.Runtime` contract checks pass; no live account acceptance). `templates/modules/reader-preferences.vcmodule` stays aligned with the `settings-module` entry headers and declarative-only sections.
 
-Next implement the shared consumer/capability matching,then service and declarative-module executors. All clients retain the same source/entry identities;UI presents compatibility and user choices rather than maintaining independent sources.
+Next implement the shared consumer/capability matching, then client service panels and declarative-module executors. All clients retain the same source/entry identities; UI presents compatibility and user choices rather than maintaining independent sources.

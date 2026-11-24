@@ -1,0 +1,12 @@
+{
+  "id": "service.bangumi",
+  "name": "Bangumi",
+  "version": "0.1.0",
+  "kind": "service.js",
+  "entry": "index.mjs",
+  "permissions": [
+    "network",
+    "storage",
+    "secrets"
+  ]
+}

@@ -54,6 +54,9 @@ jobs:
       - name: Run Legado converter unit tests
         run: node --test tools/convert/legado/convert.test.mjs
 
+      - name: Run service package unit tests
+        run: node --test tools/services/services.test.mjs
+
       - name: Check first-party license boundary (no GPL-3.0-only regression)
         run: |
           node --input-type=module - <<'EOF'

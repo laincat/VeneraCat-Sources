@@ -90,7 +90,12 @@
       "kind": "service",
       "name": "Trakt",
       "version": "0.1.0",
-      "status": "planned",
+      "filename": "service.trakt.zip",
+      "license": "LGPL-3.0-or-later",
+      "input": {
+        "dir": "catalog/packages/service.trakt"
+      },
+      "status": "experimental",
       "supports": {
         "platforms": [
           "ios",
@@ -101,10 +106,9 @@
           "service.v1"
         ]
       },
-      "design": "plans/services/trakt/manifest.draft.json",
       "verification": {
-        "level": "design-only",
-        "scope": "not installable"
+        "level": "fixture-verified",
+        "scope": "Verified with offline mock-host unit tests and Core service.InstallPackage + service.Runtime contract tests; no live Trakt account acceptance"
       }
     },
     {
@@ -112,7 +116,12 @@
       "kind": "service",
       "name": "TMDB",
       "version": "0.1.0",
-      "status": "planned",
+      "filename": "service.tmdb.zip",
+      "license": "LGPL-3.0-or-later",
+      "input": {
+        "dir": "catalog/packages/service.tmdb"
+      },
+      "status": "experimental",
       "supports": {
         "platforms": [
           "ios",
@@ -123,10 +132,9 @@
           "service.v1"
         ]
       },
-      "design": "plans/services/tmdb/manifest.draft.json",
       "verification": {
-        "level": "design-only",
-        "scope": "not installable"
+        "level": "fixture-verified",
+        "scope": "Verified with offline mock-host unit tests and Core service.InstallPackage + service.Runtime contract tests; no live TMDB API/account acceptance"
       }
     },
     {
@@ -134,7 +142,12 @@
       "kind": "service",
       "name": "Bangumi",
       "version": "0.1.0",
-      "status": "planned",
+      "filename": "service.bangumi.zip",
+      "license": "LGPL-3.0-or-later",
+      "input": {
+        "dir": "catalog/packages/service.bangumi"
+      },
+      "status": "experimental",
       "supports": {
         "platforms": [
           "ios",
@@ -145,10 +158,9 @@
           "service.v1"
         ]
       },
-      "design": "plans/services/bangumi/manifest.draft.json",
       "verification": {
-        "level": "design-only",
-        "scope": "not installable"
+        "level": "fixture-verified",
+        "scope": "Verified with offline mock-host unit tests and Core service.InstallPackage + service.Runtime contract tests; no live Bangumi account acceptance"
       }
     },
     {

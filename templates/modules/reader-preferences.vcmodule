@@ -1,7 +1,9 @@
+#!id=reader-preferences
 #!name=阅读偏好示例
 #!desc=声明式配置覆盖示例；当前客户端尚未实现此模块格式
 #!version=0.1.0
 #!format=veneracat-module/1-draft
+#!requires=settings-module.v1
 
 [Reader]
 page-gap = 8

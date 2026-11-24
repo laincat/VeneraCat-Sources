@@ -9,6 +9,7 @@
 ## 资料
 
 - [源、合集、条目、订阅与模块的明确边界](docs/SOURCE-BOUNDARY.md)
+- [服务插件包说明（Bangumi / TMDB / Trakt）](docs/SERVICES.md)
 - [三项目现状、上游依赖、Magpie、编辑器与主题方案](docs/ECOSYSTEM.md)
 - [漫画 AI 自动上色方案](docs/COLORIZATION.md)
 - [GitHub 检索与源码证据](research/github-2026-11-04.json)
@@ -41,15 +42,16 @@ Plex发布源码已迁入本仓`catalog/packages/plex/plex.js`,构建器直接�
 ```sh
 node tools/build.mjs
 node prototypes/catalog-contract/run.mjs
+node --test tools/convert/legado/convert.test.mjs tools/services/services.test.mjs
 ```
 
-第二条还需要相邻VeneraCat Core及其Go依赖。它核对一个合集、所有实际条目哈希、平台/能力声明,确认不存在按客户端划分的发布目录,并通过真实Core解析旧视频适配及安装Plex。
+第二条还需要相邻VeneraCat Core及其Go依赖。它核对一个合集、所有实际条目哈希、平台/能力声明,确认不存在按客户端划分的发布目录,并通过真实Core校验`service.{bangumi,tmdb,trakt}`三个服务zip包的安装与执行,以及解析旧视频适配并安装视频插件。
 
 其它可选原型:`node prototypes/moejs-webapi/run.mjs`;在`prototypes/editor-highlight`执行`npm install --no-package-lock`与`node check.mjs`;TMDB原型按其README运行。这些不是客户端生产代码。
 
 ## 当前内容与兼容性
 
-合集统一列出Plex、主题示例、Surge风格的阅读偏好模块示例,以及Trakt/TMDB/Bangumi和上色设计。实际内容、原型、计划分别标记;计划没有可安装artifact。
+合集统一列出视频/小说源、主题示例、Surge风格的阅读偏好模块示例、已打包的Trakt/TMDB/Bangumi服务包（`experimental`、`fixture-verified`）,以及漫画AI上色设计。实际内容、原型、计划分别标记;计划没有可安装artifact。
 
 - `source.json`是新的统一草案协议,当前客户端尚无总目录消费者。
 - `compat/vcvideo.json`适配现有视频索引格式,来自同一合集,不独立维护;待客户端支持统一合集安装视频源后再退役。旧客户端暂不能用一个新合集入口自动安装所有种类。

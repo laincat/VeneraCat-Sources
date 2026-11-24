@@ -34,7 +34,7 @@
 {
   "id": "service.tmdb",
   "kind": "service",
-  "status": "planned",
+  "status": "experimental",
   "supports": {
     "platforms": ["ios", "macos", "windows"],
     "requiresCapabilities": ["service.v1"]
@@ -72,6 +72,6 @@
 
 ## 6. 本轮落地
 
-已移除三个项目的独立selector与发布目录;一个合集现含7条目、3份内容制品和4项不可安装设计。平台差异仅在条目supports中声明。构建器仍离线,实际Core安装契约走同一合集派生的旧格式。
+已保持单一跨端合集结构,无按客户端拆分的发布目录。Trakt/TMDB/Bangumi 三个服务包已作为 `service.js` 压缩包进入 `catalog/packages/` 与统一构建产物（`fixture-verified`,离线夹具与真实 Core `service.Store`/`service.Runtime` 校验通过,不含真实账号验收）；`templates/modules/reader-preferences.vcmodule` 与合集 `settings-module` 条目保持元信息头与声明式配置节一致。
 
-后续先实现统一源消费与条目能力匹配,再接service和声明式模块执行器。所有端共用相同源及条目身份,UI只表现兼容性和用户选择,不生成各自维护的源集合。
+后续先实现统一源消费与条目能力匹配,再接客户端服务面板与声明式模块执行器。所有端共用相同源及条目身份,UI只表现兼容性和用户选择,不生成各自维护的源集合。

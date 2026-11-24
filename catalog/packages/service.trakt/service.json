@@ -1,0 +1,12 @@
+{
+  "id": "service.trakt",
+  "name": "Trakt",
+  "version": "0.1.0",
+  "kind": "service.js",
+  "entry": "index.mjs",
+  "permissions": [
+    "network",
+    "storage",
+    "secrets"
+  ]
+}
