@@ -17,8 +17,8 @@
     "id": "lnreader.linovel",
     "step": "detail",
     "status": "fail",
-    "reason": "Get https://www.linovel.net/book/100021.html: context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
-    "testedAt": "2026-11-24T01:03:08Z"
+    "reason": "site blocks non-browser clients (curl HTTP 403 in 0.95s; Go HTTP client timeout awaiting headers)",
+    "testedAt": "2026-11-24T01:07:20Z"
   },
   {
     "id": "lnreader.lewenn",
@@ -33,6 +33,27 @@
     "status": "fail",
     "reason": "https://www.69shu.xyz/ returns HTTP 403 JS redirect anti-bot page (0 search results)",
     "testedAt": "2026-11-24T01:00:33Z"
+  },
+  {
+    "id": "lnreader.linovelib",
+    "step": "search",
+    "status": "fail",
+    "reason": "upstream linovelib.js hardcodes http://localhost:5301/api/search",
+    "testedAt": "2026-11-24T00:59:05Z"
+  },
+  {
+    "id": "lnreader.linovelib_tw",
+    "step": "search",
+    "status": "fail",
+    "reason": "碰到人机验证，不支持 (CloudflareException: https://tw.linovelib.com//search/%E9%BE%99_1.html)",
+    "testedAt": "2026-11-24T00:59:05Z"
+  },
+  {
+    "id": "lnreader.novel543",
+    "step": "search",
+    "status": "fail",
+    "reason": "碰到人机验证，不支持 (CloudflareException: https://www.novel543.com/search/%E9%BE%99)",
+    "testedAt": "2026-11-24T00:59:06Z"
   },
   {
     "id": "lnreader.novelbin",

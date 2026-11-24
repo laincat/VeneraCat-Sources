@@ -33,10 +33,12 @@ for (const item of [...input.entries].sort(byId)) {
     stagedFiles.push({url, bytes});
     record.artifact = {url, sha256: sha256(bytes), bytes: bytes.length};
     if (item.key) record.key = item.key;
-  } else {
+  } else if (item.design) {
     const bytes = await readFile(localPath(item.design)), url = `designs/${item.id}.json`;
     stagedFiles.push({url, bytes});
     record.design = {url, sha256: sha256(bytes)};
+  } else if (item.status !== 'broken') {
+    throw Error('entry must specify input, design, or broken status');
   }
   entries.push(record);
 }
@@ -59,7 +61,9 @@ try {
   const staged = JSON.parse(await readFile(join(stage, 'source.json'), 'utf8'));
   if (!Array.isArray(staged.entries) || staged.entries.length !== entries.length) throw Error('staged manifest entry count mismatch');
   for (const entry of staged.entries) {
-    const ref = entry.artifact ?? entry.design, bytes = await readFile(join(stage, ref.url));
+    const ref = entry.artifact ?? entry.design;
+    if (!ref) continue;
+    const bytes = await readFile(join(stage, ref.url));
     if (sha256(bytes) !== ref.sha256 || (entry.artifact && bytes.length !== entry.artifact.bytes)) throw Error(`staged integrity mismatch: ${entry.id}`);
   }
   JSON.parse(await readFile(join(stage, 'compat/vcvideo.json'), 'utf8'));

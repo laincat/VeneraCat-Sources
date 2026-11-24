@@ -207,8 +207,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -244,8 +245,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -254,11 +256,7 @@
       "name": "linovel",
       "key": "lnreader_linovel",
       "version": "1.0.1",
-      "filename": "lnreader_linovel.js",
       "license": "MIT",
-      "input": {
-        "file": "catalog/packages/lnreader.linovel/lnreader_linovel.js"
-      },
       "upstream": {
         "author": "LNReader contributors",
         "repo": "https://github.com/LNReader/lnreader-plugins",
@@ -279,10 +277,11 @@
           "novel-source.js"
         ]
       },
-      "status": "experimental",
+      "status": "broken",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "broken",
+        "scope": "site blocks non-browser clients (curl HTTP 403 in 0.95s; Go HTTP client timeout awaiting headers)",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -291,11 +290,7 @@
       "name": "乐文小说网",
       "key": "lnreader_lewenn",
       "version": "1.0.1",
-      "filename": "lnreader_lewenn.js",
       "license": "MIT",
-      "input": {
-        "file": "catalog/packages/lnreader.lewenn/lnreader_lewenn.js"
-      },
       "upstream": {
         "author": "LNReader contributors",
         "repo": "https://github.com/LNReader/lnreader-plugins",
@@ -316,10 +311,11 @@
           "novel-source.js"
         ]
       },
-      "status": "experimental",
+      "status": "broken",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "broken",
+        "scope": "upstream lewenn.js searchNovels() is hardcoded to return []",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -328,11 +324,7 @@
       "name": "69书吧",
       "key": "lnreader_69shu",
       "version": "0.2.2",
-      "filename": "lnreader_69shu.js",
       "license": "MIT",
-      "input": {
-        "file": "catalog/packages/lnreader.69shu/lnreader_69shu.js"
-      },
       "upstream": {
         "author": "LNReader contributors",
         "repo": "https://github.com/LNReader/lnreader-plugins",
@@ -353,10 +345,11 @@
           "novel-source.js"
         ]
       },
-      "status": "experimental",
+      "status": "broken",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "broken",
+        "scope": "https://www.69shu.xyz/ returns HTTP 403 JS redirect anti-bot page (0 search results)",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -392,8 +385,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -429,8 +423,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -466,8 +461,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -503,8 +499,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     },
     {
@@ -540,8 +537,9 @@
       },
       "status": "experimental",
       "verification": {
-        "level": "converted",
-        "scope": "Converted from LNReader plugins/v3.0.0; see probe report for live verification"
+        "level": "live-verified",
+        "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
+        "report": "research/novel-probe-report.json"
       }
     }
   ]
