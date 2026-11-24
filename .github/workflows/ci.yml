@@ -1,0 +1,157 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Build, Contract & Guardrails
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: VeneraCat Sources
+    steps:
+      - name: Checkout VeneraCat Sources
+        uses: actions/checkout@v7
+        with:
+          path: VeneraCat Sources
+
+      - name: Checkout VeneraCat Core (for catalog contract test)
+        uses: actions/checkout@v7
+        with:
+          repository: laincat/VeneraCat-Core
+          path: VeneraCat Core
+
+      - name: Setup Node.js (LTS)
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+
+      - name: Setup Go (for catalog contract test)
+        uses: actions/setup-go@v7
+        with:
+          go-version: stable
+          cache-dependency-path: VeneraCat Core/go.sum
+
+      - name: Build collection and verify no build/ drift
+        run: |
+          node tools/build.mjs
+          git diff --exit-code build/
+
+      - name: Run catalog contract test (against VeneraCat Core)
+        run: node prototypes/catalog-contract/run.mjs
+
+      - name: Run Legado converter unit tests
+        run: node --test tools/convert/legado/convert.test.mjs
+
+      - name: Check first-party license boundary (no GPL-3.0-only regression)
+        run: |
+          node --input-type=module - <<'EOF'
+          import { readFileSync } from 'node:fs';
+
+          const manifests = ['catalog/source.json', 'build/source.json'];
+          const errors = [];
+
+          for (const file of manifests) {
+            const doc = JSON.parse(readFileSync(file, 'utf8'));
+            if (!Array.isArray(doc.entries) || doc.entries.length === 0) {
+              errors.push(`${file}: missing or empty entries array`);
+              continue;
+            }
+            for (const entry of doc.entries) {
+              const isThirdParty = Boolean(entry.upstream);
+              if (isThirdParty) {
+                if (typeof entry.license !== 'string' || !entry.license.trim()) {
+                  errors.push(`${file} [${entry.id}]: third-party entry missing license`);
+                } else if (entry.upstream.license && entry.license !== entry.upstream.license) {
+                  errors.push(`${file} [${entry.id}]: license (${entry.license}) != upstream.license (${entry.upstream.license})`);
+                }
+              } else {
+                if (entry.license === 'GPL-3.0-only') {
+                  errors.push(`${file} [${entry.id}]: first-party entry regressed to GPL-3.0-only`);
+                } else if (entry.license && entry.license !== 'LGPL-3.0-or-later') {
+                  errors.push(`${file} [${entry.id}]: unexpected first-party license "${entry.license}" (expected LGPL-3.0-or-later)`);
+                } else if (entry.status !== 'planned' && entry.license !== 'LGPL-3.0-or-later') {
+                  errors.push(`${file} [${entry.id}]: non-planned first-party entry missing LGPL-3.0-or-later license`);
+                }
+              }
+            }
+          }
+
+          if (errors.length > 0) {
+            for (const msg of errors) console.error(`license-check: ${msg}`);
+            process.exit(1);
+          }
+          console.log(`license-check: ok (${manifests.join(', ')})`);
+          EOF
+
+      - name: Check bilingual Markdown pairs, top cross-links, and clean root
+        run: |
+          node --input-type=module - <<'EOF'
+          import { execFileSync } from 'node:child_process';
+          import { existsSync, readdirSync, readFileSync } from 'node:fs';
+          import { basename } from 'node:path';
+
+          const errors = [];
+          const mdFiles = execFileSync(
+            'git',
+            ['-c', 'core.quotepath=false', 'ls-files', '-z', '--cached', '--others', '--exclude-standard', '*.md'],
+            { encoding: 'utf8' }
+          ).split('\0').filter(Boolean);
+
+          for (const file of mdFiles) {
+            const isEn = file.endsWith('.en.md');
+            const peer = isEn ? `${file.slice(0, -6)}.md` : `${file.slice(0, -3)}.en.md`;
+            if (!existsSync(peer)) {
+              errors.push(`${file}: missing counterpart ${peer}`);
+              continue;
+            }
+            const peerName = basename(peer);
+            const top = readFileSync(file, 'utf8').split(/\r?\n/).slice(0, 5).join('\n');
+            if (!top.includes(`](${peerName})`) && !top.includes(`](./${peerName})`)) {
+              errors.push(`${file}: missing top cross-link to ${peerName} within first 5 lines`);
+            }
+          }
+
+          const allowedRoot = new Set([
+            '.git',
+            '.github',
+            '.gitattributes',
+            '.gitignore',
+            'COPYING',
+            'LICENSE',
+            'README.md',
+            'README.en.md',
+            'package.json',
+            'build',
+            'catalog',
+            'docs',
+            'plans',
+            'prototypes',
+            'research',
+            'templates',
+            'tools',
+          ]);
+
+          for (const entry of readdirSync('.')) {
+            if (!allowedRoot.has(entry)) {
+              errors.push(`unexpected entry in repository root: ${entry}`);
+            }
+          }
+
+          if (errors.length > 0) {
+            for (const msg of errors) console.error(`docs-and-root-check: ${msg}`);
+            process.exit(1);
+          }
+          console.log(`docs-and-root-check: ok (${mdFiles.length} markdown files, clean root)`);
+          EOF
