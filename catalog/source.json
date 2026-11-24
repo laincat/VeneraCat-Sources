@@ -541,6 +541,33 @@
         "scope": "Passed search -> detail -> chapters -> chapter in Core MoeJS runtime",
         "report": "research/novel-probe-report.json"
       }
+    },
+    {
+      "id": "anime1",
+      "kind": "video-source",
+      "name": "Anime1.me",
+      "key": "anime1",
+      "version": "1.0.0",
+      "filename": "anime1.js",
+      "license": "LGPL-3.0-or-later",
+      "input": {
+        "file": "catalog/packages/anime1/anime1.js"
+      },
+      "verification": {
+        "level": "live-verified",
+        "scope": "Passed search -> details -> play (per-episode isolated Cookie/Referer headers) -> Windows Nekophage player real playback (readyState=4, 1280px, 1.99s->3.99s)"
+      },
+      "supports": {
+        "platforms": [
+          "ios",
+          "macos",
+          "windows"
+        ],
+        "requiresCapabilities": [
+          "video-source.js"
+        ]
+      },
+      "status": "experimental"
     }
   ]
 }
