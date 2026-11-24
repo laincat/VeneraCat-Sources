@@ -1,0 +1,1093 @@
+{
+  "sourceRepo": "aoaostar/legado (release/sources/4dc410d1.json)",
+  "sourceUrl": "https://raw.githubusercontent.com/aoaostar/legado/release/sources/4dc410d1.json",
+  "testedAt": "2026-11-24T01:18:27.345Z",
+  "sampleSize": 100,
+  "strictPureCssPass": 0,
+  "strictPureCssRatePercent": 0,
+  "expandedRelaxedPass": 2,
+  "expandedRelaxedRatePercent": 2,
+  "expandedPolicy": "Relax ONLY pagination (nextTocUrl/nextContentUrl), XPath, and static POST/headers; keep rejecting @js:/<js>/{{js}}, @json:, dynamic POST/headers, and unsupported selector syntax",
+  "reasonFrequency": {
+    "UNSUPPORTED_STATIC_POST_OR_HEADER": 46,
+    "UNSUPPORTED_JSON_RULE": 50,
+    "UNSUPPORTED_JS_RULE": 83,
+    "UNSUPPORTED_SELECTOR_SYNTAX": 77,
+    "UNSUPPORTED_DYNAMIC_POST_OR_HEADER": 3,
+    "UNSUPPORTED_XPATH_RULE": 3,
+    "UNSUPPORTED_PAGINATION": 9
+  },
+  "entries": [
+    {
+      "name": "猴子阅读",
+      "url": "https://api.leeyegy.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "书香之家",
+      "url": "https://s.lhdqsb.cn/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_DYNAMIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "猫眼看书",
+      "url": "http://api.jmlldsc.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "熬夜看书",
+      "url": "https://get.aoyekanshu.com",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_JSON_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "读书阁",
+      "url": "http://www.lianjianxsw.com/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_JSON_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "9x阅读器",
+      "url": "https://novel-api.elklk.cn/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "文趣阁",
+      "url": "http://m.nshkedu.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "番薯小说",
+      "url": "https://ggs.manmeng168.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "爱青果",
+      "url": "https://api-new.iqingguo.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "番薯免费小说",
+      "url": "https://g21.manmeng168.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "追书小说",
+      "url": "https://js.jsxsapp.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "爱下电子书",
+      "url": "http://api.aixdzs.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "花生小说",
+      "url": "https://api.wan123x.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "灯读文学💰",
+      "url": "https://s30001.zhongyue001.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "下书文学",
+      "url": "https://get.xiashuzhan.com",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_JSON_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "看书神",
+      "url": "http://apitt.kanshushenapp.com/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_JSON_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "听小说",
+      "url": "https://ts.txs12.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "企鹅听书",
+      "url": "http://pub.ddrd8.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "猫耳小说",
+      "url": "http://wd.wdxsb.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "必看悦读",
+      "url": "https://api.97yd.com/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_DYNAMIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔书阁❶",
+      "url": "http://m.damaoli.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔书阁❷",
+      "url": "http://m.dushuapp.net/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "番茄小说①",
+      "url": "https://www.fanqianxs.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "番茄小说②",
+      "url": "https://www.88ttv.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "八一中文①",
+      "url": "http://www.zwduxs.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "无错小说①",
+      "url": "https://www.wucuoxs.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "无错小说②",
+      "url": "https://www.quledu.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "燃文小说①",
+      "url": "https://www.ranwen.org/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "燃文小说②",
+      "url": "https://www.ranwena.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "燃文小说③",
+      "url": "https://www.wzxywj.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_XPATH_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "燃文小说④",
+      "url": "https://www.ranwen.net/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "顶点小说①",
+      "url": "https://www.znxdxs.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "顶点小说③",
+      "url": "https://www.23uswx.net/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "思路客①",
+      "url": "http://www.shuquzw.info/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "思路客②",
+      "url": "http://www.isiluke.net/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "思路客③",
+      "url": "https://www.rucedu.net/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "全本小说①",
+      "url": "https://www.qbtxt.net/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "全本小说②",
+      "url": "https://www.quanbentxt.net/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "全本小说③",
+      "url": "https://www.quanbenba.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "全本小说④",
+      "url": "https://www.heenee.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁①",
+      "url": "https://www.bqg6.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁③",
+      "url": "https://www.biquge99.cc/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁④",
+      "url": "https://www.biqukun.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑤",
+      "url": "http://www.bqg24.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑦",
+      "url": "http://www.bqg36.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑧",
+      "url": "https://www.bqg5.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑨",
+      "url": "https://www.bqg1.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑮",
+      "url": "https://www.dzxzh.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑯",
+      "url": "https://www.xzmncy.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑰",
+      "url": "https://www.zgbnt.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑱",
+      "url": "https://www.ydxrf.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑲",
+      "url": "http://www.ibiqu.net/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁⑳",
+      "url": "https://www.sypvm.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉑",
+      "url": "https://www.shqxjx.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉒",
+      "url": "http://www.xinbqg.org/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉔",
+      "url": "https://www.biquge2023.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉕",
+      "url": "https://www.dnmcn.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "69书吧①",
+      "url": "https://www.69shu.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "六九中文",
+      "url": "https://www.liujiuzw.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "趣书吧",
+      "url": "https://www.39shuwu.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "大文学①",
+      "url": "https://www.dawenxue.net/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "阅友小说",
+      "url": "https://sma.yueyouxs.com/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_DYNAMIC_POST_OR_HEADER",
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "书趣阁",
+      "url": "https://www.ishuquge.la/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "选书网",
+      "url": "https://www.ixuanshu.net/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "天域小说网",
+      "url": "https://www.tycqzw.la/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "恋上你看书",
+      "url": "https://www.630book.io/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "文学迷",
+      "url": "https://www.juzixs.vip/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "蚂蚁阅读",
+      "url": "http://www.xmayitxt.com/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "有度中文网",
+      "url": "https://www.yodu.org",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "小说部落",
+      "url": "http://www.xiaoshuobuluo.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "飘天文学",
+      "url": "https://www.piaotian.so/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "鬼吹灯",
+      "url": "http://www.gdbzkz.com/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "鸟书网",
+      "url": "http://www.99mk.org/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "UU小说",
+      "url": "http://www.uuxs.info/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣网",
+      "url": "http://www.biquw.info/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "铅笔小说",
+      "url": "https://m.x23qb.com",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "零零小说",
+      "url": "https://www.00shu.la/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "乐阅读",
+      "url": "https://www.27k.net/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "求书网",
+      "url": "http://www.aidusk.info/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "四三中文",
+      "url": "https://www.zw43.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "御书房",
+      "url": "https://www.ysfwxc.com/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "抖音小说",
+      "url": "https://www.douyinxs.com/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "三一小说",
+      "url": "https://www.31xs.com/",
+      "reasons": [
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "趣书网",
+      "url": "http://www.97mv.cn/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "必去书库",
+      "url": "https://www.biqusk.com/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "落秋中文",
+      "url": "https://www.luoqiu.cc/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_PAGINATION",
+        "UNSUPPORTED_XPATH_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": true
+    },
+    {
+      "name": "无极小说",
+      "url": "https://wujixsw.info/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "无限小说",
+      "url": "https://www.wenxuesk.net/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_XPATH_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "香书小说",
+      "url": "https://www.ibiquges.org/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER",
+        "UNSUPPORTED_SELECTOR_SYNTAX",
+        "UNSUPPORTED_JS_RULE"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "溜达小说",
+      "url": "http://www.liudatxt.net/",
+      "reasons": [
+        "UNSUPPORTED_STATIC_POST_OR_HEADER"
+      ],
+      "passStrict": false,
+      "passExpanded": true
+    },
+    {
+      "name": "乐文小说①",
+      "url": "https://www.syhzzf.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "乐文小说②",
+      "url": "https://www.jwzhn.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "顶点小说④",
+      "url": "https://www.skynan.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "顶点小说⑤",
+      "url": "https://www.yjcard.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "顶点小说⑥",
+      "url": "https://www.xiaoshuopu.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "书旗小说",
+      "url": "https://www.shuq.net/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉖",
+      "url": "https://www.njxhds.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉗",
+      "url": "https://www.zzxx.org/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "笔趣阁㉘",
+      "url": "http://www.biquge5200.com/",
+      "reasons": [
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    },
+    {
+      "name": "大文学②",
+      "url": "https://www.ssdzgj.com/",
+      "reasons": [
+        "UNSUPPORTED_JSON_RULE",
+        "UNSUPPORTED_JS_RULE",
+        "UNSUPPORTED_SELECTOR_SYNTAX"
+      ],
+      "passStrict": false,
+      "passExpanded": false
+    }
+  ]
+}

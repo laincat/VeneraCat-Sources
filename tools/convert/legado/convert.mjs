@@ -429,6 +429,113 @@ export function convertSources(sources) {
   };
 }
 
+
+/**
+ * Audit a single Legado source and return ALL rejection reasons (never stopping
+ * at the first failure), plus whether it would pass if ONLY pagination, XPath,
+ * and static/fixed POST+headers were relaxed (still rejecting @js:, @json:,
+ * dynamic POST/headers, and unsupported selector syntax).
+ */
+export function auditSourceAllReasons(source) {
+  const reasons = new Set();
+  const details = [];
+  const add = (code, detail) => {
+    reasons.add(code);
+    details.push({ code, detail });
+  };
+
+  if (!source || typeof source !== 'object') {
+    add(REJECT.MISSING_REQUIRED_FIELD, 'Empty source object');
+    return { name: '(unnamed)', url: '', reasons: [...reasons], details, passStrict: false, passExpanded: false };
+  }
+
+  const name = String(source.bookSourceName || '').trim();
+  const baseUrl = String(source.bookSourceUrl || '').trim();
+  const searchUrl = String(source.searchUrl || '').trim();
+
+  if (!name || !baseUrl || !searchUrl || !source.ruleSearch || !source.ruleToc || !source.ruleContent) {
+    add(REJECT.MISSING_REQUIRED_FIELD, 'Missing top-level required fields');
+  }
+
+  // Check JS in top-level fields
+  if (hasUnsupportedJS(searchUrl, true) || hasUnsupportedJS(source.header, false) || hasUnsupportedJS(source.loginUrl, false)) {
+    add(REJECT.UNSUPPORTED_JS_RULE, 'JS in searchUrl/header/loginUrl');
+  }
+
+  // Distinguish static vs dynamic header/POST
+  if (source.header && String(source.header).trim()) {
+    if (hasUnsupportedJS(source.header, false)) {
+      add('UNSUPPORTED_DYNAMIC_POST_OR_HEADER', 'Dynamic JS in bookSource header');
+    } else {
+      add('UNSUPPORTED_STATIC_POST_OR_HEADER', 'Static custom bookSource header');
+    }
+  }
+  if (/,\s*\{/.test(searchUrl)) {
+    if (hasUnsupportedJS(searchUrl, true)) {
+      add('UNSUPPORTED_DYNAMIC_POST_OR_HEADER', 'Dynamic JS in searchUrl options');
+    } else {
+      add('UNSUPPORTED_STATIC_POST_OR_HEADER', 'Static POST/options block in searchUrl');
+    }
+  }
+  if (searchUrl && !searchUrl.includes('{{key}}') && !hasUnsupportedJS(searchUrl, true)) {
+    add(REJECT.UNSUPPORTED_SELECTOR_SYNTAX, 'searchUrl missing {{key}}');
+  }
+
+  // Pagination
+  if (source.ruleToc?.nextTocUrl && String(source.ruleToc.nextTocUrl).trim()) {
+    add(REJECT.UNSUPPORTED_PAGINATION, 'ruleToc.nextTocUrl is set');
+  }
+  if (source.ruleContent?.nextContentUrl && String(source.ruleContent.nextContentUrl).trim()) {
+    add(REJECT.UNSUPPORTED_PAGINATION, 'ruleContent.nextContentUrl is set');
+  }
+
+  // Inspect EVERY rule field (never short-circuit)
+  const fields = [
+    ['searchList', source.ruleSearch?.bookList, false, true],
+    ['searchName', source.ruleSearch?.name, true, true],
+    ['searchUrl', source.ruleSearch?.bookUrl, true, true],
+    ['searchAuthor', source.ruleSearch?.author, true, false],
+    ['searchCover', source.ruleSearch?.coverUrl, true, false],
+    ['infoName', source.ruleBookInfo?.name, true, false],
+    ['infoAuthor', source.ruleBookInfo?.author, true, false],
+    ['infoIntro', source.ruleBookInfo?.intro, true, false],
+    ['infoCover', source.ruleBookInfo?.coverUrl, true, false],
+    ['infoTocUrl', source.ruleBookInfo?.tocUrl, true, false],
+    ['tocList', source.ruleToc?.chapterList, false, true],
+    ['tocName', source.ruleToc?.chapterName, true, true],
+    ['tocUrl', source.ruleToc?.chapterUrl, true, true],
+    ['content', source.ruleContent?.content, true, true],
+  ];
+
+  for (const [k, raw, requireAttr, required] of fields) {
+    if (required && (!raw || !String(raw).trim())) {
+      add(REJECT.MISSING_REQUIRED_FIELD, 'Missing rule: ' + k);
+      continue;
+    }
+    if (!raw || typeof raw !== 'string' || !raw.trim()) continue;
+    const s = raw.trim();
+    if (hasUnsupportedJS(s, false)) add(REJECT.UNSUPPORTED_JS_RULE, k + ': JS rule');
+    if (hasUnsupportedXPath(s)) add(REJECT.UNSUPPORTED_XPATH_RULE, k + ': XPath rule');
+    if (hasUnsupportedJSON(s)) add(REJECT.UNSUPPORTED_JSON_RULE, k + ': JSONPath rule');
+    // Only test CSS/JSoup syntax if it's not JS/XPath/JSON
+    if (!hasUnsupportedJS(s, false) && !hasUnsupportedXPath(s) && !hasUnsupportedJSON(s)) {
+      const parsed = parseRule(s, { requireAttr });
+      if (!parsed.ok) add(parsed.code, k + ': ' + parsed.detail);
+    }
+  }
+
+  const relaxedAllowed = new Set([
+    REJECT.UNSUPPORTED_PAGINATION,
+    REJECT.UNSUPPORTED_XPATH_RULE,
+    'UNSUPPORTED_STATIC_POST_OR_HEADER',
+  ]);
+  const all = [...reasons];
+  const passStrict = all.length === 0;
+  const passExpanded = all.every((c) => relaxedAllowed.has(c));
+
+  return { name: name || '(unnamed)', url: baseUrl, reasons: all, details, passStrict, passExpanded };
+}
+
 async function main() {
   const args = process.argv.slice(2);
   let input = '';
